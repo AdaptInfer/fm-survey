@@ -1,6 +1,6 @@
 activations
 adaptively
-Adaptivity
+adaptivity
 adversarially
 ADWIN
 Agentic
@@ -61,12 +61,12 @@ DRO’s
 EDDM
 EIIL
 ELBO
-embeddings
+Embeddings
 encodings
 ensembling
 ERM
 Exchangeability
-Explainers
+explainers
 factuality
 FAISS
 GAM
@@ -86,7 +86,7 @@ GPT
 GRU
 Guo
 Hastie
-HTE
+hte
 hypernetworks
 hyperparameter
 hyperparameters
@@ -157,12 +157,12 @@ missingness
 misspecified
 MLP
 MNAR
-modularity
+Modularity
 modularized
 MoICE
 MSE
 MTL
-Multimodal
+multimodal
 Nelder
 Neyman
 NLP
@@ -189,7 +189,7 @@ PGD
 piecewise
 pointwise
 Poursabzi
-pre
+Pre
 preprocessing
 pretrained
 pretraining
@@ -260,7 +260,7 @@ upweighted
 VAE
 VAEAC
 VAEs
-variational
+Variational
 VCBART
 VCM
 VCMs
