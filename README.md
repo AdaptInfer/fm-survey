@@ -1,58 +1,35 @@
-# Context-Adaptive Statistical Inference: Recent Progress, Open Problems, and Opportunities for Foundation Models
+# Foundation Models for Biomedical Data: Architectures, Adaptation, and Opportunities for Scientific Discovery
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://adaptinfer.github.io/context-review/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https:/adaptinfer.github.io/context-review/manuscript.pdf)
-[![GitHub Actions Status](https://github.com/AdaptInfer/context-review/workflows/Manubot/badge.svg)](https://github.com/AdaptInfer/context-review/actions)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://adaptinfer.github.io/fm-survey/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https:/adaptinfer.github.io/fm-survey/manuscript.pdf)
+[![GitHub Actions Status](https://github.com/AdaptInfer/fm-survey/workflows/Manubot/badge.svg)](https://github.com/AdaptInfer/fm-survey/actions)
 
 
 This is an open, collaborative review paper on context-adaptive statistical methods. We look at recent progress, identify open problems, and find practical opportunities for applying these methods. We are particularly excited by the opportunities for foundation models to provide context for statistical inference.
 
 
-This manuscript is created automatically from the content in [content](https://github.com/AdaptInfer/context-review/tree/main/content) using Manubot. Please [contribute](CONTRIBUTING.md)! Make a PR or file an issue, and see below for more information about Manubot. Live update versions of the manuscript are available at:
+This manuscript is created automatically from the content in [content](https://github.com/AdaptInfer/fm-survey/tree/main/content) using Manubot. Please [contribute](CONTRIBUTING.md)! Make a PR or file an issue, and see below for more information about Manubot. Live update versions of the manuscript are available at:
 
-+ **HTML manuscript** at https://adaptinfer.github.io/context-review/
-+ **PDF manuscript** at https://adaptinfer.github.io/context-review/manuscript.pdf
++ **HTML manuscript** at https://adaptinfer.github.io/fm-survey/
++ **PDF manuscript** at https://adaptinfer.github.io/fm-survey/manuscript.pdf
 
 ---
 
 ## Why are we writing this?
-As statistical modeling evolves, we are witnessing two complementary approaches to integrating context.
-Traditional statistical models are being expanded to allow explicit parameter adjustments based on context, making their
-adaptations transparent and interpretable.
-Meanwhile, large foundation models are being built that how to implicitly adapt to context, enabling impressive
-performance in a wide range of tasks including in-context learning.
-This review seeks to unite these two perspectives, combining the explicit adaptability of statistical models with the
-powerful, implicit adjustments of foundation models.
-By bringing these approaches together, we aim to provide a comprehensive overview of current progress, challenges,
-and opportunities in context-adaptive inference.
 
 
 ### Key perspectives driving this review:
 
-- **Complex models contain multitudes of simpler, context-specific models** – Every complex model can be understood as a combination of many smaller models, each tailored to specific contexts.
-- **Explicit vs. implicit adaptation** – Statistical models explicitly adjust parameters based on context, while foundation models implicitly adapt to context. Combining these approaches offers new opportunities for robust and adaptive inference.
-- **Context reshapes inference** – Context-awareness enhances both statistical and foundation models, improving personalization and accuracy in predictions.
-- **In-context learning as a model of implicit adaptation** – Foundation models excel at tasks like in-context learning, showing how implicit adaptation can inform broader context-adaptive modeling efforts.
-- **Foundation models as context providers** – These models offer flexible, scalable ways to incorporate context, enhancing traditional methods with richer context integration.
-- **Challenging traditional assumptions** – Context-adaptive methods move beyond the assumption of homogeneity in data, enabling models to handle heterogeneous datasets more effectively.
-- **Personalization through adaptation** – Uniting explicit and implicit context-adaptive models provides a path to more nuanced, personalized predictions that reflect the complexities of real-world data.
-
-![./content/images/context_philosophies.png](./content/images/context_philosophies.png)
-
 ## Table of Contents
+
 1. [Abstract](./content/01.abstract.md)
-2. [Introduction](./content/02.introduction.md)
-3. [From Population Assumptions to Context-Adaptive Inference](./content/03.overview.md)
-4. [A Historical Data-Driven Perspective on Context](./content/04.historical.md)
-5. [Principles of Context-Adaptive Inference](content/05.principles.md)
-6. [Explicit Adaptivity: Structured Estimation of $f(c)$](content/06.explicit.md)
-7. [Implicit Adaptivity: Emergent Contextualization within Complex Models](content/07.implicit.md)
-8. [Making Implicit Adaptivity Explicit: Local Models, Surrogates and Post Hoc Approximations](content/08.interpretations.md)
-9. [Context-Invariant Training: A View from the Converse](content/09.invariant.md)
-10. [Applications, Case Studies, and Software Tools](content/10.applications_tools.md)
-11. [Future Trends and Opportunities with Foundation Models](content/11.future_trends.md)
-12. [Open Problems](content/12.open_problems.md)
-13. [Conclusions](content/13.conclusion.md)
+2. [Introduction and Motivation](./content/02.introduction.md)
+3. [Foundations of Pretraining for Biomedical Data](./content/03.pretraining.md)
+4. [Adapting Foundation Models to Biomedical Tasks](./content/04.adaptation.md)
+5. [Multimodal Integration and Representation Learning](./content/05.multimodal.md)  
+6. [Clinical Deployment](./content/06.deployment.md)  
+7. [Opportunities and Open Problems](./content/07.open_problems.md)  
+8. [Conclusions](./content/08.conclusion.md)
 
 ## How can you contribute?
 We welcome contributions from the community. Please see our [contribution guidelines](CONTRIBUTING.md) for more information.
