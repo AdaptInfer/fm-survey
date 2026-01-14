@@ -1,0 +1,160 @@
+[
+  {
+    "id": "higgins2017betavae",
+    "type": "paper-conference",
+    "title": "beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework",
+    "author": [
+      { "family": "Higgins", "given": "Irina" },
+      { "family": "Matthey", "given": "Loic" },
+      { "family": "Pal", "given": "Arka" },
+      { "family": "Burgess", "given": "Christopher" },
+      { "family": "Glorot", "given": "Xavier" },
+      { "family": "Botvinick", "given": "Matthew" },
+      { "family": "Mohamed", "given": "Shakir" },
+      { "family": "Lerchner", "given": "Alexander" }
+    ],
+    "container-title": "International Conference on Learning Representations",
+    "issued": { "date-parts": [[2017]] },
+    "URL": "https://openreview.net/forum?id=Sy2fzU9gl"
+  },
+  {
+    "id": "eastwood2018a",
+    "type": "paper-conference",
+    "title": "A Framework for the Quantitative Evaluation of Disentangled Representations",
+    "author": [
+      { "family": "Eastwood", "given": "Cian" },
+      { "family": "Williams", "given": "Christopher K. I." }
+    ],
+    "container-title": "International Conference on Learning Representations",
+    "issued": { "date-parts": [[2018]] },
+    "URL": "https://openreview.net/forum?id=By-7dz-AZ"
+  },
+  {
+  "id": "vapnik1991principles",
+  "type": "paper-conference",
+  "author": [
+    { "family": "Vapnik", "given": "V." }
+  ],
+  "title": "Principles of risk minimization for learning theory",
+  "issued": { "date-parts": [[1991]] },
+  "publisher": "Morgan Kaufmann Publishers Inc.",
+  "publisher-place": "San Francisco, CA, USA",
+  "collection-title": "Proceedings of the 5th International Conference on Neural Information Processing Systems",
+  "event-place": "Denver, Colorado",
+  "page": "831–838",
+  "number-of-pages": "8",
+  "ISBN": "1558602224",
+  "URL": "https://dl.acm.org/doi/10.5555/2986916.2987018",
+  "abstract": "Learning is posed as a problem of function estimation, for which two principles of solution are considered: empirical risk minimization and structural risk minimization. These two principles are applied to two different statements of the function estimation problem: global and local. Systematic improvements in prediction power are illustrated in application to zip-code recognition.",
+  "container-title": "Advances in Neural Information Processing Systems 5 (NIPS'91)"
+  },
+  {
+  "id": "Fisher1949Design",
+  "type": "book",
+  "title": "The Design of Experiments",
+  "author": [
+    {"family": "Fisher", "given": "Ronald A."}
+  ],
+  "publisher": "Oliver & Boyd",
+  "issued": {"date-parts": [[1949]]}
+  },
+  {
+  "id": "Legendre1805Comets",
+  "type": "book",
+  "title": "Nouvelles méthodes pour la détermination des orbites des comètes",
+  "author": [
+    {"family": "Legendre", "given": "Adrien-Marie"}
+  ],
+  "publisher": "Courcier",
+  "publisher-place": "Paris",
+  "issued": {"date-parts": [[1805]]}
+  },
+  {
+  "id": "Gauss1809Ambientium",
+  "type": "book",
+  "title": "Theoria motus corporum coelestium in sectionibus conicis solem ambientium",
+  "author": [
+    {"family": "Gauss", "given": "Carl Friedrich"}
+  ],
+  "publisher": "Perthes & Besser",
+  "publisher-place": "Hamburg",
+  "issued": {"date-parts": [[1809]]}
+  },
+  {
+  "id": "Fisher1925Research",
+  "type": "book",
+  "title": "Statistical Methods for Research Workers",
+  "author": [
+    {"family": "Fisher", "given": "Ronald A."}
+  ],
+  "publisher": "Oliver & Boyd",
+  "publisher-place": "Edinburgh",
+  "issued": {"date-parts": [[1925]]}
+  },
+  {
+  "id": "Henderson1950Genetic",
+  "type": "article-journal",
+  "title": "Estimation of Genetic Parameters",
+  "author": [
+    {"family": "Henderson", "given": "Charles R."}
+  ],
+  "container-title": "Annals of Mathematical Statistics",
+  "volume": "21",
+  "issue": "2",
+  "page": "309–310",
+  "issued": {"date-parts": [[1950]]}
+  },
+ {
+  "id": "Baena2006EarlyDrift",
+  "type": "paper-conference",
+  "title": "Early Drift Detection Method",
+  "author": [
+    {"family": "Baena-García", "given": "Manuel"},
+    {"family": "del Campo-Ávila", "given": "José"},
+    {"family": "Fidalgo", "given": "Raul"},
+    {"family": "Bifet", "given": "Albert"},
+    {"family": "Gavalda", "given": "Ricard"},
+    {"family": "Morales-Bueno", "given": "Rafael"}
+  ],
+  "container-title": "Fourth International Workshop on Knowledge Discovery from Data Streams",
+  "volume": "6",
+  "page": "77–86",
+  "issued": {"date-parts": [[2006]]}
+},
+{
+  "id": "Sutton1998RLIntroduction",
+  "type": "book",
+  "title": "Reinforcement Learning: An Introduction",
+  "author": [
+    {"family": "Sutton", "given": "Richard S."},
+    {"family": "Barto", "given": "Andrew G."}
+  ],
+  "publisher": "MIT Press",
+  "publisher-place": "Cambridge, MA",
+  "ISBN": "978-0-262-19398-6",
+  "issued": {"date-parts": [[1998]]}
+},
+{
+  "id": "Bellman1957Markovian",
+  "type": "article-journal",
+  "title": "A Markovian Decision Process",
+  "author": [
+    {"family": "Bellman", "given": "Richard"}
+  ],
+  "container-title": "Journal of Mathematics and Mechanics",
+  "page": "679–684",
+  "publisher": "JSTOR",
+  "issued": {"date-parts": [[1957]]}
+},
+{
+  "id": "Watkins1989Learning",
+  "type": "thesis",
+  "title": "Learning from Delayed Rewards",
+  "author": [
+    {"family": "Watkins", "given": "Christopher John Cornish Hellaby"}
+  ],
+  "publisher": "King's College, University of Cambridge",
+  "genre": "PhD thesis",
+  "issued": {"date-parts": [[1989]]}
+}
+]

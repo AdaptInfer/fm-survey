@@ -1,0 +1,129 @@
+---
+title: "Context-Adaptive Inference: A Unified Statistical and Foundation-Model View"
+date: null  # Defaults to date generated, but can specify like '2022-10-31'.
+keywords:
+  - markdown
+  - publishing
+  - manubot
+lang: en-US
+authors:
+  - github: YueYao-stat
+    name: Yue Yao
+    initials: YY
+    orcid: 0009-0000-8195-3943
+    mastodon:
+    mastodon-server:
+    email: yao255@wisc.edu
+    affiliations:
+      - Department of Statistics, University of Wisconsin-Madison
+    corresponding: false
+  - github: cnellington
+    name: Caleb N. Ellington
+    initials: CE
+    orcid: 0000-0001-7029-8023
+    twitter: probablybots
+    mastodon:
+    mastodon-server:
+    email: cellingt@cs.cmu.edu
+    affiliations:
+      - Computational Biology Department, Carnegie Mellon University
+    corresponding: false
+  - github: Clouddelta
+    name: Jingyun Jia
+    initials: JJ
+    orcid: 0009-0006-3241-3485
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: jjia39@wisc.edu
+    affiliations:
+      - Department of Statistics, University of Wisconsin-Madison
+    corresponding: false
+  - github: BaihengChen
+    name: Baiheng Chen
+    initials: BC
+    orcid: 0000-0001-8554-3984
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: bchen342@wisc.edu
+    affiliations:
+      - Department of Statistics, University of Wisconsin-Madison
+    corresponding: false
+  - github: NoakLiu
+    name: Dong Liu
+    initials: DL
+    orcid: 0009-0009-6815-8297
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: dong.liu.dl2367@yale.edu
+    affiliations:
+      - Department of Computer Science, Yale University
+    corresponding: false
+  - github: rikhilr
+    name: Rikhil Rao
+    initials: RR
+    orcid: 0009-0003-5221-1125
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: rrao27@wisc.edu
+    affiliations:
+      - Department of Computer Science, University of Wisconsin - Madison
+    corresponding: false
+  - github: w-jiaqi
+    name: Jiaqi Wang
+    initials: JW
+    orcid: 0009-0003-8531-9490
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: jiaqiw18@uw.edu
+    affiliations:
+      - Paul G. Allen School of Computer Science & Engineering, University of Washington
+    corresponding: false
+  - github: Samuel-WM
+    name: Samuel Wales-McGrath
+    initials: SWM
+    orcid: 0009-0008-5405-2646
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: wales-mcgrath.4@osu.edu
+    affiliations:
+      - Department of Computer Science and Engineering, The Ohio State University
+    corresponding: false
+  - github: Jessego5
+    name: Yixin Yang
+    initials: YY
+    orcid: 0009-0008-1436-5584
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: yyang784@wisc.edu
+    affiliations:
+      - Department of Computer Sciences, University of Wisconsin-Madison
+    corresponding: false
+  - github: LZYEIL
+    name: Zhiyuan Li
+    initials: ZL
+    orcid: 0009-0006-6016-7381
+    twitter:
+    mastodon:
+    mastodon-server:
+    email: zli2562@wisc.edu
+    affiliations:
+      - Department of Computer Sciences, University of Wisconsin-Madison
+    corresponding: false
+  - github: blengerich
+    name: Ben Lengerich
+    initials: BL
+    orcid: 0000-0001-8690-9554
+    twitter: ben_lengerich
+    mastodon:
+    mastodon-server:
+    email: lengerich@wisc.edu
+    affiliations:
+      - Department of Statistics, University of Wisconsin-Madison
+    corresponding: true
