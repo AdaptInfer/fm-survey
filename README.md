@@ -5,7 +5,7 @@
 [![GitHub Actions Status](https://github.com/AdaptInfer/fm-survey/workflows/Manubot/badge.svg)](https://github.com/AdaptInfer/fm-survey/actions)
 
 
-This is an open, collaborative review paper on context-adaptive statistical methods. We look at recent progress, identify open problems, and find practical opportunities for applying these methods. We are particularly excited by the opportunities for foundation models to provide context for statistical inference.
+This is an open, collaborative review paper on foundation models for biomedical data. We survey recent progress, identify open problems, and find practical opportunities for applying these methods.
 
 
 This manuscript is created automatically from the content in [content](https://github.com/AdaptInfer/fm-survey/tree/main/content) using Manubot. Please [contribute](CONTRIBUTING.md)! Make a PR or file an issue, and see below for more information about Manubot. Live update versions of the manuscript are available at:
