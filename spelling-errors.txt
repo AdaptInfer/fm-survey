@@ -66,7 +66,7 @@ encodings
 ensembling
 ERM
 Exchangeability
-explainers
+Explainers
 factuality
 FAISS
 GAM
@@ -97,7 +97,7 @@ ignorability
 ImageNet
 independencies
 interconnectedness
-interpretability
+Interpretability
 interpretable
 intraclass
 invariance
@@ -150,7 +150,7 @@ Milvus
 minimality
 minimax
 minimizer
-mis
+Mis
 misattribution
 miscalibrated
 missingness
@@ -161,7 +161,7 @@ Modularity
 modularized
 MoICE
 MSE
-MTL
+mtl
 multimodal
 Nelder
 Neyman
@@ -186,10 +186,10 @@ PCA
 PEFT
 personalization
 PGD
-piecewise
+Piecewise
 pointwise
 Poursabzi
-Pre
+pre
 preprocessing
 pretrained
 pretraining

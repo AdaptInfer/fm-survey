@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2026-01-14'
+date-meta: '2026-01-28'
 author-meta:
 - Yue Yao
 - Caleb N. Ellington
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
   <meta property="og:title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
   <meta property="twitter:title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
-  <meta name="dc.date" content="2026-01-14" />
-  <meta name="citation_publication_date" content="2026-01-14" />
-  <meta property="article:published_time" content="2026-01-14" />
-  <meta name="dc.modified" content="2026-01-14T15:20:18+00:00" />
-  <meta property="article:modified_time" content="2026-01-14T15:20:18+00:00" />
+  <meta name="dc.date" content="2026-01-28" />
+  <meta name="citation_publication_date" content="2026-01-28" />
+  <meta property="article:published_time" content="2026-01-28" />
+  <meta name="dc.modified" content="2026-01-28T13:40:55+00:00" />
+  <meta property="article:modified_time" content="2026-01-28T13:40:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -89,9 +89,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AdaptInfer.github.io/fm-survey/" />
   <meta name="citation_pdf_url" content="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/ffb495a9c158fd0b91419f1bc68e3b0ea8b79c95/" />
-  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/ffb495a9c158fd0b91419f1bc68e3b0ea8b79c95/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/ffb495a9c158fd0b91419f1bc68e3b0ea8b79c95/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/ad57769781d7d293c877a7e458d802e033ef17d9/" />
+  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/ad57769781d7d293c877a7e458d802e033ef17d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/ad57769781d7d293c877a7e458d802e033ef17d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -113,10 +113,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AdaptInfer.github.io/fm-survey/v/ffb495a9c158fd0b91419f1bc68e3b0ea8b79c95/))
+([permalink](https://AdaptInfer.github.io/fm-survey/v/ad57769781d7d293c877a7e458d802e033ef17d9/))
 was automatically generated
-from [AdaptInfer/fm-survey@ffb495a](https://github.com/AdaptInfer/fm-survey/tree/ffb495a9c158fd0b91419f1bc68e3b0ea8b79c95)
-on January 14, 2026.
+from [AdaptInfer/fm-survey@ad57769](https://github.com/AdaptInfer/fm-survey/tree/ad57769781d7d293c877a7e458d802e033ef17d9)
+on January 28, 2026.
 </em></small>
 
 
