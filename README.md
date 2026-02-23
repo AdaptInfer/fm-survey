@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/AdaptInfer/fm-survey/tree/gh-pages) branch hosts the contents of this directory at <https://AdaptInfer.github.io/fm-survey/>.
-The permalink for this webpage version is <https://AdaptInfer.github.io/fm-survey/v/ad57769781d7d293c877a7e458d802e033ef17d9/>.
+The permalink for this webpage version is <https://AdaptInfer.github.io/fm-survey/v/97bab107373f376fa7b625b3614f96da178a75a5/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://AdaptInfer.github.io/fm-survey/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`ad57769781d7d293c877a7e458d802e033ef17d9`](https://github.com/AdaptInfer/fm-survey/commit/ad57769781d7d293c877a7e458d802e033ef17d9).
+[`97bab107373f376fa7b625b3614f96da178a75a5`](https://github.com/AdaptInfer/fm-survey/commit/97bab107373f376fa7b625b3614f96da178a75a5).
