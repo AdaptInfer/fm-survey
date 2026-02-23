@@ -24,12 +24,13 @@ This manuscript is created automatically from the content in [content](https://g
 
 1. [Abstract](./content/01.abstract.md)
 2. [Introduction and Motivation](./content/02.introduction.md)
-3. [Foundations of Pretraining for Biomedical Data](./content/03.pretraining.md)
-4. [Adapting Foundation Models to Biomedical Tasks](./content/04.adaptation.md)
-5. [Multimodal Integration and Representation Learning](./content/05.multimodal.md)  
-6. [Clinical Deployment](./content/06.deployment.md)  
-7. [Opportunities and Open Problems](./content/07.open_problems.md)  
-8. [Conclusions](./content/08.conclusion.md)
+3. [The Current State of Biomedical Foundation Models by Modality](./content/03.modality.md)
+4. [Foundations of Pretraining for Biomedical Data](./content/03.pretraining.md)
+5. [Adapting Foundation Models to Biomedical Tasks](./content/04.adaptation.md)
+6. [Multimodal Integration and Representation Learning](./content/05.multimodal.md)  
+7. [Clinical Deployment](./content/06.deployment.md)  
+8. [Opportunities and Open Problems](./content/07.open_problems.md)  
+9. [Conclusions](./content/08.conclusion.md)
 
 ## How can you contribute?
 We welcome contributions from the community. Please see our [contribution guidelines](CONTRIBUTING.md) for more information.
