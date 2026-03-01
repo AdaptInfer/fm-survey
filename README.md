@@ -1,4 +1,5 @@
-# Foundation Models for Biomedical Data: Architectures, Adaptation, and Opportunities for Scientific Discovery
+# Do We Need Biomedical Foundation Models?
+Training Domain Models vs Adapting General Foundation Models
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://adaptinfer.github.io/fm-survey/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https:/adaptinfer.github.io/fm-survey/manuscript.pdf)
@@ -16,21 +17,28 @@ This manuscript is created automatically from the content in [content](https://g
 ---
 
 ## Why are we writing this?
+Foundation models are rapidly influencing biomedical research, with domain-specific models emerging for clinical text, imaging, genomics, and proteins. At the same time, increasingly capable general-purpose models are being adapted to biomedical tasks through prompting, fine-tuning, and tool use.
 
+This raises a central question for the field: *should biomedical tasks use domain-specific foundation models, or can general models be adapted effectively*?
+
+This review examines that question by surveying domain-specific biomedical foundation models, methods for adapting general models, and the challenges of evaluating and deploying these systems in biomedical settings.
 
 ### Key perspectives driving this review:
+- **Domain-specific vs general models**. A central tension in biomedical AI is whether progress will come from domain-specific pretraining or adaptation of general foundation models.
+- **Biomedical AI is a systems problem**. Success often depends on integration with complex data systems such as EHRs, ontologies, and experimental datasets.
+- **Evaluation and reliability are critical**. Biomedical applications require strong validation, interpretability, and robustness.
+- **Hybrid approaches are likely**. Future systems will likely combine general models, domain-specific models, and structured biomedical knowledge.
 
 ## Table of Contents
 
 1. [Abstract](./content/01.abstract.md)
 2. [Introduction and Motivation](./content/02.introduction.md)
-3. [The Current State of Biomedical Foundation Models by Modality](./content/03.modality.md)
-4. [Foundations of Pretraining for Biomedical Data](./content/03.pretraining.md)
-5. [Adapting Foundation Models to Biomedical Tasks](./content/04.adaptation.md)
-6. [Multimodal Integration and Representation Learning](./content/05.multimodal.md)  
-7. [Clinical Deployment](./content/06.deployment.md)  
-8. [Opportunities and Open Problems](./content/07.open_problems.md)  
-9. [Conclusions](./content/08.conclusion.md)
+3. [Domain-Specific Biomedical Foundation Models](./content/03.domain_specific.md)
+4. [Adapting General Foundation Models to Biomedical Tasks](./content/04.adapting.md)
+5. [Integration with Biomedical Data Systems](./content/05.integrating.md)
+6. [Evaluation, Reliability, and Deployment](./content/06.deployment.md)
+7. [Open Problems and Future Directions](./content/07.open_problems.md)  
+8. [Conclusions](./content/08.conclusion.md)
 
 ## How can you contribute?
 We welcome contributions from the community. Please see our [contribution guidelines](CONTRIBUTING.md) for more information.
