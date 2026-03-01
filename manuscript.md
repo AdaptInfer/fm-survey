@@ -1,5 +1,5 @@
 ---
-title: 'Context-Adaptive Inference: A Unified Statistical and Foundation-Model View'
+title: Do Biomedical Tasks Require Biomedical Foundation Models?
 keywords:
 - markdown
 - publishing
@@ -7,15 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2026-03-01'
 author-meta:
-- Yue Yao
-- Caleb N. Ellington
 - Jingyun Jia
-- Baiheng Chen
-- Dong Liu
-- Rikhil Rao
-- Jiaqi Wang
-- Samuel Wales-McGrath
-- Yixin Yang
 - Zhiyuan Li
 - Ben Lengerich
 header-includes: |
@@ -25,55 +17,24 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
-  <meta name="citation_title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
-  <meta property="og:title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
-  <meta property="twitter:title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
+  <meta name="dc.title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
+  <meta name="citation_title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
+  <meta property="og:title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
+  <meta property="twitter:title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
   <meta name="dc.date" content="2026-03-01" />
   <meta name="citation_publication_date" content="2026-03-01" />
   <meta property="article:published_time" content="2026-03-01" />
-  <meta name="dc.modified" content="2026-03-01T06:54:15+00:00" />
-  <meta property="article:modified_time" content="2026-03-01T06:54:15+00:00" />
+  <meta name="dc.modified" content="2026-03-01T06:55:43+00:00" />
+  <meta property="article:modified_time" content="2026-03-01T06:55:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Yue Yao" />
-  <meta name="citation_author_institution" content="Department of Statistics, University of Wisconsin-Madison" />
-  <meta name="citation_author_orcid" content="0009-0000-8195-3943" />
-  <meta name="citation_author" content="Caleb N. Ellington" />
-  <meta name="citation_author_institution" content="Computational Biology Department, Carnegie Mellon University" />
-  <meta name="citation_author_orcid" content="0000-0001-7029-8023" />
-  <meta name="twitter:creator" content="@probablybots" />
   <meta name="citation_author" content="Jingyun Jia" />
   <meta name="citation_author_institution" content="Department of Statistics, University of Wisconsin-Madison" />
   <meta name="citation_author_orcid" content="0009-0006-3241-3485" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Baiheng Chen" />
-  <meta name="citation_author_institution" content="Department of Statistics, University of Wisconsin-Madison" />
-  <meta name="citation_author_orcid" content="0000-0001-8554-3984" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Dong Liu" />
-  <meta name="citation_author_institution" content="Department of Computer Science, Yale University" />
-  <meta name="citation_author_orcid" content="0009-0009-6815-8297" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Rikhil Rao" />
-  <meta name="citation_author_institution" content="Department of Computer Science, University of Wisconsin - Madison" />
-  <meta name="citation_author_orcid" content="0009-0003-5221-1125" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Jiaqi Wang" />
-  <meta name="citation_author_institution" content="Paul G. Allen School of Computer Science &amp; Engineering, University of Washington" />
-  <meta name="citation_author_orcid" content="0009-0003-8531-9490" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Samuel Wales-McGrath" />
-  <meta name="citation_author_institution" content="Department of Computer Science and Engineering, The Ohio State University" />
-  <meta name="citation_author_orcid" content="0009-0008-5405-2646" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Yixin Yang" />
-  <meta name="citation_author_institution" content="Department of Computer Sciences, University of Wisconsin-Madison" />
-  <meta name="citation_author_orcid" content="0009-0008-1436-5584" />
   <meta name="twitter:creator" content="@None" />
   <meta name="citation_author" content="Zhiyuan Li" />
   <meta name="citation_author_institution" content="Department of Computer Sciences, University of Wisconsin-Madison" />
@@ -89,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AdaptInfer.github.io/fm-survey/" />
   <meta name="citation_pdf_url" content="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/" />
-  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/" />
+  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -113,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/))
+([permalink](https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/))
 was automatically generated
-from [AdaptInfer/fm-survey@24ecc15](https://github.com/AdaptInfer/fm-survey/tree/24ecc1527935c2a09c79454e547370f570ee05ae)
+from [AdaptInfer/fm-survey@d890843](https://github.com/AdaptInfer/fm-survey/tree/d8908432faef168549db10f85f2511f4d9f35b68)
 on March 1, 2026.
 </em></small>
 
@@ -124,30 +85,6 @@ on March 1, 2026.
 ## Authors
 
 
-
-+ **Yue Yao**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0000-8195-3943](https://orcid.org/0009-0000-8195-3943)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [YueYao-stat](https://github.com/YueYao-stat)
-    <br>
-  <small>
-     Department of Statistics, University of Wisconsin-Madison
-  </small>
-
-+ **Caleb N. Ellington**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0001-7029-8023](https://orcid.org/0000-0001-7029-8023)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [cnellington](https://github.com/cnellington)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [probablybots](https://twitter.com/probablybots)
-    <br>
-  <small>
-     Computational Biology Department, Carnegie Mellon University
-  </small>
 
 + **Jingyun Jia**
   <br>
@@ -158,72 +95,6 @@ on March 1, 2026.
     <br>
   <small>
      Department of Statistics, University of Wisconsin-Madison
-  </small>
-
-+ **Baiheng Chen**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0001-8554-3984](https://orcid.org/0000-0001-8554-3984)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [BaihengChen](https://github.com/BaihengChen)
-    <br>
-  <small>
-     Department of Statistics, University of Wisconsin-Madison
-  </small>
-
-+ **Dong Liu**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0009-6815-8297](https://orcid.org/0009-0009-6815-8297)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [NoakLiu](https://github.com/NoakLiu)
-    <br>
-  <small>
-     Department of Computer Science, Yale University
-  </small>
-
-+ **Rikhil Rao**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0003-5221-1125](https://orcid.org/0009-0003-5221-1125)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [rikhilr](https://github.com/rikhilr)
-    <br>
-  <small>
-     Department of Computer Science, University of Wisconsin - Madison
-  </small>
-
-+ **Jiaqi Wang**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0003-8531-9490](https://orcid.org/0009-0003-8531-9490)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [w-jiaqi](https://github.com/w-jiaqi)
-    <br>
-  <small>
-     Paul G. Allen School of Computer Science & Engineering, University of Washington
-  </small>
-
-+ **Samuel Wales-McGrath**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0008-5405-2646](https://orcid.org/0009-0008-5405-2646)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [Samuel-WM](https://github.com/Samuel-WM)
-    <br>
-  <small>
-     Department of Computer Science and Engineering, The Ohio State University
-  </small>
-
-+ **Yixin Yang**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0008-1436-5584](https://orcid.org/0009-0008-1436-5584)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [Jessego5](https://github.com/Jessego5)
-    <br>
-  <small>
-     Department of Computer Sciences, University of Wisconsin-Madison
   </small>
 
 + **Zhiyuan Li**
