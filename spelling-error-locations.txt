@@ -1,5 +1,4 @@
-content/01.abstract.md:15:identifiability
-content/01.abstract.md:15:scalable
+content/01.abstract.md:5:pretraining
 content/03.overview.md:13:subpopulation
 content/03.overview.md:13:underrepresenting
 content/03.overview.md:19:subpopulations

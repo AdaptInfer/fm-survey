@@ -1,15 +1,15 @@
 activations
 adaptively
-Adaptivity
+adaptivity
 adversarially
 ADWIN
 Agentic
 Akyürek
 algorithmically
 ANOVA
-Approximators
+approximators
 Arjovsky
-arxiv
+arXiv
 AUC
 auditability
 auditable
@@ -38,7 +38,7 @@ controllability
 convolutional
 counterfactuals
 Counterintuitively
-Covariate
+covariate
 covariates
 Dai
 Danaher
@@ -57,7 +57,7 @@ DRO’s
 EDDM
 EIIL
 ELBO
-Embeddings
+embeddings
 encodings
 ensembling
 ERM
@@ -81,7 +81,7 @@ GPT
 GRU
 Guo
 Hastie
-HTE
+hte
 hyperparameter
 hyperparameters
 hyperprior
@@ -91,8 +91,8 @@ ignorability
 ImageNet
 independencies
 interconnectedness
-Interpretability
-interpretable
+interpretability
+Interpretable
 intraclass
 invariance
 invariances
@@ -138,10 +138,10 @@ Milvus
 minimality
 minimax
 minimizer
-mis
+Mis
 misattribution
 miscalibrated
-Missingness
+missingness
 misspecified
 MLP
 MNAR
@@ -162,7 +162,7 @@ OOD
 operationalized
 optimality
 optimizers
-Overfitting
+overfitting
 overflexible
 overparameterized
 parameterization
@@ -172,7 +172,7 @@ PCA
 PEFT
 personalization
 PGD
-piecewise
+Piecewise
 pointwise
 Poursabzi
 pre
@@ -241,7 +241,7 @@ upweighted
 VAE
 VAEAC
 VAEs
-variational
+Variational
 VCBART
 VCM
 VCMs

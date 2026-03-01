@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-01" />
   <meta name="citation_publication_date" content="2026-03-01" />
   <meta property="article:published_time" content="2026-03-01" />
-  <meta name="dc.modified" content="2026-03-01T06:55:43+00:00" />
-  <meta property="article:modified_time" content="2026-03-01T06:55:43+00:00" />
+  <meta name="dc.modified" content="2026-03-01T06:56:28+00:00" />
+  <meta property="article:modified_time" content="2026-03-01T06:56:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AdaptInfer.github.io/fm-survey/" />
   <meta name="citation_pdf_url" content="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/" />
-  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/44c43c6694eca56ce91222045118ed29a6715dbd/" />
+  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/44c43c6694eca56ce91222045118ed29a6715dbd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/44c43c6694eca56ce91222045118ed29a6715dbd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/))
+([permalink](https://AdaptInfer.github.io/fm-survey/v/44c43c6694eca56ce91222045118ed29a6715dbd/))
 was automatically generated
-from [AdaptInfer/fm-survey@d890843](https://github.com/AdaptInfer/fm-survey/tree/d8908432faef168549db10f85f2511f4d9f35b68)
+from [AdaptInfer/fm-survey@44c43c6](https://github.com/AdaptInfer/fm-survey/tree/44c43c6694eca56ce91222045118ed29a6715dbd)
 on March 1, 2026.
 </em></small>
 
@@ -133,19 +133,10 @@ Ben Lengerich \<lengerich@wisc.edu\>.
 
 ## Abstract {.page_break_before}
 
-Modern predictive systems are expected to adapt their behavior to the specific situation they are facing. 
-A clinical model should not treat every patient the same; a retrieval-augmented model should change its answer when given different evidence; a mixture-of-experts model should route different inputs to different experts. 
-We call this capability **context-adaptive inference**: before predicting, the system uses information about the current context to specialize its parameters or computation for that instance.
+Foundation models are increasingly used across biomedical domains, including clinical text, medical imaging, genomics, and protein modeling. At the same time, rapidly advancing general-purpose foundation models can often be adapted to biomedical tasks through prompting, fine-tuning, and tool use. This raises a central question: **do biomedical applications require domain-specific foundation models, or can general models be adapted effectively?**
 
-This article provides a unified view of context-adaptive inference across three traditions that are usually treated separately: 
-(i) explicit adaptation in statistics (e.g. varying-coefficient models, local regression, hierarchical sharing), 
-(ii) rapid task-specific adaptation in meta-learning and transfer, and 
-(iii) implicit adaptation in large foundation models via prompting, retrieval, and expert routing. 
-We formalize these approaches under a common objective: to map context $c$ to adapted parameters 
-$\theta(c)$, then to predict via $f(x; \theta(c))$. 
-Under squared loss, linear prediction heads, and fixed features, we prove that explicit parameter adaptation and implicit routing are mathematically equivalent to kernel ridge regression on joint features of inputs and context. 
-Building on this bridge, we propose practical design principles and evaluation metrics including adaptation-efficiency, routing stability, and context-specific robustness to guide when to specialize, how to constrain that specialization, and how to audit context-adaptive models in deployment. 
-Finally, we identify open problems in identifiability, robustness under distribution shift, and efficient large-scale adaptation, outlining design principles for methods that are scalable, reliable, and transparent in real-world settings.
+In this review, we examine the landscape of biomedical foundation models and compare domain-specific pretraining with adaptation of general models. We discuss how these approaches interact with biomedical data systems and the challenges of evaluation, reliability, and deployment. We conclude by outlining key open problems that will shape the future of foundation models in biomedical research and healthcare.
+
 
 ## Introduction
 
