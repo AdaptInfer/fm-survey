@@ -9,7 +9,7 @@ algorithmically
 ANOVA
 approximators
 Arjovsky
-arxiv
+arXiv
 AUC
 auditability
 auditable
@@ -95,7 +95,7 @@ ImageNet
 independencies
 interconnectedness
 interpretability
-interpretable
+Interpretable
 intraclass
 invariance
 invariances
@@ -104,7 +104,7 @@ IRM’s
 IRMv
 Jessego
 Jia
-Jiaqi
+jiaqi
 Jingyun
 JTT
 KKT
@@ -114,7 +114,7 @@ KV
 latents
 Lauritzen’s
 Leibler
-lengerich
+Lengerich
 Lepski’s
 Levina
 Lindholm
@@ -145,7 +145,7 @@ Milvus
 minimality
 minimax
 minimizer
-Mis
+mis
 misattribution
 miscalibrated
 missingness
@@ -156,7 +156,7 @@ modularity
 modularized
 MoICE
 MSE
-mtl
+MTL
 Multimodal
 Nelder
 Neyman
@@ -170,7 +170,7 @@ OOD
 operationalized
 optimality
 optimizers
-Overfitting
+overfitting
 overflexible
 overparameterized
 parameterization
@@ -253,7 +253,7 @@ upweighted
 VAE
 VAEAC
 VAEs
-Variational
+variational
 VCBART
 VCM
 VCMs
