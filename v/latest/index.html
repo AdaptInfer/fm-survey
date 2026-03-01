@@ -4,20 +4,12 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Yue Yao" />
-  <meta name="author" content="Caleb N. Ellington" />
   <meta name="author" content="Jingyun Jia" />
-  <meta name="author" content="Baiheng Chen" />
-  <meta name="author" content="Dong Liu" />
-  <meta name="author" content="Rikhil Rao" />
-  <meta name="author" content="Jiaqi Wang" />
-  <meta name="author" content="Samuel Wales-McGrath" />
-  <meta name="author" content="Yixin Yang" />
   <meta name="author" content="Zhiyuan Li" />
   <meta name="author" content="Ben Lengerich" />
   <meta name="dcterms.date" content="2026-03-01" />
   <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Context-Adaptive Inference: A Unified Statistical and Foundation-Model View</title>
+  <title>Do Biomedical Tasks Require Biomedical Foundation Models?</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -56,55 +48,24 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
-  <meta name="citation_title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
-  <meta property="og:title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
-  <meta property="twitter:title" content="Context-Adaptive Inference: A Unified Statistical and Foundation-Model View" />
+  <meta name="dc.title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
+  <meta name="citation_title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
+  <meta property="og:title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
+  <meta property="twitter:title" content="Do Biomedical Tasks Require Biomedical Foundation Models?" />
   <meta name="dc.date" content="2026-03-01" />
   <meta name="citation_publication_date" content="2026-03-01" />
   <meta property="article:published_time" content="2026-03-01" />
-  <meta name="dc.modified" content="2026-03-01T06:54:15+00:00" />
-  <meta property="article:modified_time" content="2026-03-01T06:54:15+00:00" />
+  <meta name="dc.modified" content="2026-03-01T06:55:43+00:00" />
+  <meta property="article:modified_time" content="2026-03-01T06:55:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Yue Yao" />
-  <meta name="citation_author_institution" content="Department of Statistics, University of Wisconsin-Madison" />
-  <meta name="citation_author_orcid" content="0009-0000-8195-3943" />
-  <meta name="citation_author" content="Caleb N. Ellington" />
-  <meta name="citation_author_institution" content="Computational Biology Department, Carnegie Mellon University" />
-  <meta name="citation_author_orcid" content="0000-0001-7029-8023" />
-  <meta name="twitter:creator" content="@probablybots" />
   <meta name="citation_author" content="Jingyun Jia" />
   <meta name="citation_author_institution" content="Department of Statistics, University of Wisconsin-Madison" />
   <meta name="citation_author_orcid" content="0009-0006-3241-3485" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Baiheng Chen" />
-  <meta name="citation_author_institution" content="Department of Statistics, University of Wisconsin-Madison" />
-  <meta name="citation_author_orcid" content="0000-0001-8554-3984" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Dong Liu" />
-  <meta name="citation_author_institution" content="Department of Computer Science, Yale University" />
-  <meta name="citation_author_orcid" content="0009-0009-6815-8297" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Rikhil Rao" />
-  <meta name="citation_author_institution" content="Department of Computer Science, University of Wisconsin - Madison" />
-  <meta name="citation_author_orcid" content="0009-0003-5221-1125" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Jiaqi Wang" />
-  <meta name="citation_author_institution" content="Paul G. Allen School of Computer Science &amp; Engineering, University of Washington" />
-  <meta name="citation_author_orcid" content="0009-0003-8531-9490" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Samuel Wales-McGrath" />
-  <meta name="citation_author_institution" content="Department of Computer Science and Engineering, The Ohio State University" />
-  <meta name="citation_author_orcid" content="0009-0008-5405-2646" />
-  <meta name="twitter:creator" content="@None" />
-  <meta name="citation_author" content="Yixin Yang" />
-  <meta name="citation_author_institution" content="Department of Computer Sciences, University of Wisconsin-Madison" />
-  <meta name="citation_author_orcid" content="0009-0008-1436-5584" />
   <meta name="twitter:creator" content="@None" />
   <meta name="citation_author" content="Zhiyuan Li" />
   <meta name="citation_author_institution" content="Department of Computer Sciences, University of Wisconsin-Madison" />
@@ -120,9 +81,9 @@
   <meta name="citation_fulltext_html_url" content="https://AdaptInfer.github.io/fm-survey/" />
   <meta name="citation_pdf_url" content="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/" />
-  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/" />
+  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -135,39 +96,17 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Context-Adaptive Inference: A Unified Statistical and Foundation-Model View</h1>
+<h1 class="title">Do Biomedical Tasks Require Biomedical Foundation Models?</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AdaptInfer.github.io/fm-survey/v/24ecc1527935c2a09c79454e547370f570ee05ae/">permalink</a>)
+(<a href="https://AdaptInfer.github.io/fm-survey/v/d8908432faef168549db10f85f2511f4d9f35b68/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AdaptInfer/fm-survey/tree/24ecc1527935c2a09c79454e547370f570ee05ae">AdaptInfer/fm-survey@24ecc15</a>
+from <a href="https://github.com/AdaptInfer/fm-survey/tree/d8908432faef168549db10f85f2511f4d9f35b68">AdaptInfer/fm-survey@d890843</a>
 on March 1, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>Yue Yao</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0009-0000-8195-3943">0009-0000-8195-3943</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/YueYao-stat">YueYao-stat</a>
-<br>
-<small>
-Department of Statistics, University of Wisconsin-Madison
-</small></p></li>
-<li><p><strong>Caleb N. Ellington</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0000-0001-7029-8023">0000-0001-7029-8023</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/cnellington">cnellington</a>
-· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
-<a href="https://twitter.com/probablybots">probablybots</a>
-<br>
-<small>
-Computational Biology Department, Carnegie Mellon University
-</small></p></li>
 <li><p><strong>Jingyun Jia</strong>
 <br>
 <img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
@@ -177,66 +116,6 @@ Computational Biology Department, Carnegie Mellon University
 <br>
 <small>
 Department of Statistics, University of Wisconsin-Madison
-</small></p></li>
-<li><p><strong>Baiheng Chen</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0000-0001-8554-3984">0000-0001-8554-3984</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/BaihengChen">BaihengChen</a>
-<br>
-<small>
-Department of Statistics, University of Wisconsin-Madison
-</small></p></li>
-<li><p><strong>Dong Liu</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0009-0009-6815-8297">0009-0009-6815-8297</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/NoakLiu">NoakLiu</a>
-<br>
-<small>
-Department of Computer Science, Yale University
-</small></p></li>
-<li><p><strong>Rikhil Rao</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0009-0003-5221-1125">0009-0003-5221-1125</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/rikhilr">rikhilr</a>
-<br>
-<small>
-Department of Computer Science, University of Wisconsin - Madison
-</small></p></li>
-<li><p><strong>Jiaqi Wang</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0009-0003-8531-9490">0009-0003-8531-9490</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/w-jiaqi">w-jiaqi</a>
-<br>
-<small>
-Paul G. Allen School of Computer Science &amp; Engineering, University of Washington
-</small></p></li>
-<li><p><strong>Samuel Wales-McGrath</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0009-0008-5405-2646">0009-0008-5405-2646</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/Samuel-WM">Samuel-WM</a>
-<br>
-<small>
-Department of Computer Science and Engineering, The Ohio State University
-</small></p></li>
-<li><p><strong>Yixin Yang</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0009-0008-1436-5584">0009-0008-1436-5584</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/Jessego5">Jessego5</a>
-<br>
-<small>
-Department of Computer Sciences, University of Wisconsin-Madison
 </small></p></li>
 <li><p><strong>Zhiyuan Li</strong>
 <br>
