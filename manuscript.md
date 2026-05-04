@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-04" />
   <meta name="citation_publication_date" content="2026-05-04" />
   <meta property="article:published_time" content="2026-05-04" />
-  <meta name="dc.modified" content="2026-05-04T15:49:27+00:00" />
-  <meta property="article:modified_time" content="2026-05-04T15:49:27+00:00" />
+  <meta name="dc.modified" content="2026-05-04T15:50:28+00:00" />
+  <meta property="article:modified_time" content="2026-05-04T15:50:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AdaptInfer.github.io/fm-survey/" />
   <meta name="citation_pdf_url" content="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/" />
-  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/dac3b9e6f625cc79d94cbe4b9af0d1f498546e1f/" />
+  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/dac3b9e6f625cc79d94cbe4b9af0d1f498546e1f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/dac3b9e6f625cc79d94cbe4b9af0d1f498546e1f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/))
+([permalink](https://AdaptInfer.github.io/fm-survey/v/dac3b9e6f625cc79d94cbe4b9af0d1f498546e1f/))
 was automatically generated
-from [AdaptInfer/fm-survey@c85cb44](https://github.com/AdaptInfer/fm-survey/tree/c85cb449469b31b6b728eed65453617f7993d4ce)
+from [AdaptInfer/fm-survey@dac3b9e](https://github.com/AdaptInfer/fm-survey/tree/dac3b9e6f625cc79d94cbe4b9af0d1f498546e1f)
 on May 4, 2026.
 </em></small>
 
@@ -146,9 +146,65 @@ In this review, we examine the landscape of biomedical foundation models and com
 Overview of foundation models trained directly on biomedical data across major modalities such as clinical text, imaging, genomics, proteins, and EHRs.
 
 
-### Adapting General Foundation Models to Biomedical Tasks
+## Adapting General Foundation Models to Biomedical Tasks
 
-How general-purpose foundation models (e.g., large language and vision models) are adapted to biomedical applications through prompting, fine-tuning, and tool use.
+A common assumption in biomedical AI holds that domain-specific pretraining is usually a prerequisite for clinical and biological competence. Recent evidence challenges this directly: Most medical vision-language models and LLMs fail to consistently outperform their general base models under standard prompting and fine-tuning regimes [@doi:10.48550/arXiv.2411.08870], and Llama-3-8B even surpasses the domain-pretrained MEDITRON-70B on multiple benchmarks. The implies that the bottleneck may not be biomedical knowledge, but how effectively that knowledge is elicited and behaviorally aligned. 
+
+
+
+This section argues that adaptation methods reveal three things in sequence—that general models are far more capable than assumed, that the limits of adaptation are structural rather than engineering issues, and that the endpoint is not a better biomedical foundation model but a fundamentally different system architecture.
+
+
+
+
+
+### The Underestimated Baseline
+
+The most surprising finding across adaptation research is not how much work required to make general models clinically useful, but how little. Zero- and few-shot prompting alone enable models to pass the USMLE without any domain-specific tuning [@doi:10.48550/arXiv.2303.13375], and structured clinical demonstrations yield further gains on comprehensive benchmarks [@doi:10.1038/s41586-023-06291-2]. In biochemistry, casting biological sequences into linguistic forms, treating protein sequences as a translatable "second language" [@doi:10.48550/arXiv.2502.17504] or leveraging prompt engineering to elicit molecular reasoning from SMILES representations [@doi:10.1021/acscentsci.4c01935], enables zero-shot functional inference and molecular property prediction without task-specific fine-tuning. Chain-of-thought prompting unlocks latent multi-step clinical reasoning, and the resulting paradox is revealing: AI offers no diagnostic advantage when queried informally by physicians, yet outperforms when reasoning independently [@doi:10.1001/jamanetworkopen.2024.40969]. The bottleneck here is not the model capability—it is the absence of reasoning structure in clinical workflows.
+
+
+
+Parameter-efficient fine-tuning (PEFT) sharpens this argument. Updating less than 1% of parameters via LoRA enables protein language models to exceed full fine-tuning performance across diverse prediction tasks while reducing training time 4.5-fold [@doi:10.1038/s41467-024-51844-2], and PEFT models even outperform full fine-tuning on protein-protein interaction tasks with two orders of magnitude fewer parameters [@doi:10.1073/pnas.2405840121]. In clinical text summarization, lightly fine-tuned LLMs surpass human medical expert consensus [@doi:10.1038/s41591-024-02855-5]. Taken together, prompting and PEFT establish a clear prior: The biomedical capability of general foundation models has been systematically underestimated, and the marginal return of domain-specific pretraining is far lower than the field has assumed.
+
+
+
+
+
+### Structural Limits
+
+Yet adaptation has a ceiling: General-purpose pretraining objectives are misaligned with the precision, consistency, and accountability demands of biomedical reasoning. This is not a problem that better prompts or more LoRA layers can solve.
+
+
+
+RAG exposes this clearly. Because biomedical knowledge evolves faster than any model can be retrained—PubMed adds 1.5 million articles annually [@doi:10.48550/arXiv.2509.04304], and the effective half-life of clinical knowledge has shrunk to mere months [@doi:10.1136/bmjopen-2023-072374]. RAG here appears to be a scalable path, and when retrieval works, the gains are real: MedCPT, trained on 255 million PubMed user queries, enables accurate zero-shot biomedical retrieval [@doi:10.1093/bioinformatics/btad651], and high-quality RAG pipelines improve medical QA accuracy by ~18% [@doi:10.18653/v1/2024.findings-acl.372]. But the dependency on retrieval quality is itself a structural problem: General-purpose dense retrievers fail on clinical text due to domain shift, and biomedical literature with contradictory evidence can amplify retrieval noise [@doi:10.1093/bioinformatics/btae238]. More critically, retrieval is based on semantic similarity rather than methodological rigor, failing to adhere to the evidence hierarchy of Evidence-Based Medicine (EBM). Ultimately, RAG does not solve the knowledge grounding problem—it relocates it from the model to the retrieval system.
+
+
+
+PEFT faces a mirror-image constraint: It can enhance latent knowledge, but cannot invent representations the model never learned. In low-resource clinical tasks involving rare diseases, LoRA adapters consistently fail to compensate for gaps in pretraining coverage [@doi:10.48550/arXiv.2407.19299]. This yields a conclusion: PEFT makes domain-specific pretraining redundant when general pretraining already covers the relevant knowledge, and irrelevant when it does not.
+
+
+
+Instruction tuning reveals the deepest tension in alignment. The goal of making a general model reason like a clinician runs into conflicting optimization objectives. Clinical expert preferences tend to be liability-aware and oriented toward deferring uncertainties, whereas RLHF optimizes for helpfulness and fluency. These are not tunable parameters but competing design goals. BioMed-VITAL partially bridges this gap in the multimodal setting by embedding clinician preferences into instruction generation and selection [@doi:10.48550/arXiv.2406.13173], and Balanced Fine-Tuning sidesteps reward model complexity through token- and sample-level reweighting, outperforming SFT on sparse biomedical reasoning tasks [@doi:10.48550/arXiv.2511.21075]. But these are only patches for structural mismatch. High-quality instruction datasets: BioInstruct's 25,000 GPT-4-generated clinical instructions improve QA by 17.3% [@doi:10.1093/jamia/ocae122], and Mol-Instructions spanning 17 biomolecular tasks [@doi:10.48550/arXiv.2306.08018] raise the ceiling of alignment, but without fixing it. The ceiling itself is locked by an irreconcilable tension: The objectives of optimization versus the norms of clinical accountability. Instruction tuning, under this framing, is not a path to safe clinical AI; rather, it merely shows how far we can go before hitting that inherent bound.
+
+
+
+
+
+### Toward a Decentralized Architecture
+
+The pattern across all adaptation methods points to the same conclusion: A single model, however trained, fine-tuned, or aligned cannot simultaneously maintain up-to-date knowledge, reason multi-step with precision, and operate reliably under distribution shift. These are not properties of any single model; they are properties of systems.
+
+
+
+The endpoint should be a decentralized architecture in which general foundation models serve as reasoning orchestrators, and tools help to connect them to the external world. This is the architecture that agent-based systems are already beginning to instantiate.
+
+
+
+ In chemistry, ChemCrow demonstrated that equipping a general LLM with 18 professional tools enables autonomous synthesis planning comparable to expert scientists without any pretraining [@doi:10.1038/s42256-023-00788-1]. The same principle extends across the full arc of biological discovery, from self-verifying gene-set annotation agents [@doi:10.1038/s41592-025-02748-6], to multi-agent frameworks that autonomously cycle through hypothesis generation, experimental design, and result interpretation [@doi:10.1016/j.cell.2024.09.022]. In clinical settings, EHRAgent converts natural-language queries into executable code for complex EHR reasoning, improving success rates by 29.6% over direct prompting [@doi:10.18653/v1/2024.emnlp-main.1245], not by knowing more medicine, but by knowing how to use the right tools.
+
+
+
+In these systems, domain knowledge is no longer baked into model weights but externalized into tools that any sufficiently capable general model can orchestrate [@doi:10.1038/s42256-024-00944-1]. This reframes the central question of this perspective. Domain-specific pretraining is not obsolete, but its role narrows: from the primary source of biomedical competence to one component among many in a larger architecture that no single model was ever meant to carry alone.
 
 
 ## Overview
