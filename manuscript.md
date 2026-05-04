@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-04" />
   <meta name="citation_publication_date" content="2026-05-04" />
   <meta property="article:published_time" content="2026-05-04" />
-  <meta name="dc.modified" content="2026-05-04T15:48:54+00:00" />
-  <meta property="article:modified_time" content="2026-05-04T15:48:54+00:00" />
+  <meta name="dc.modified" content="2026-05-04T15:49:27+00:00" />
+  <meta property="article:modified_time" content="2026-05-04T15:49:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AdaptInfer.github.io/fm-survey/" />
   <meta name="citation_pdf_url" content="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AdaptInfer.github.io/fm-survey/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/d4870205b21624400bcf7e506006b03690a062ea/" />
-  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d4870205b21624400bcf7e506006b03690a062ea/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/d4870205b21624400bcf7e506006b03690a062ea/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/" />
+  <meta name="manubot_html_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AdaptInfer.github.io/fm-survey/v/d4870205b21624400bcf7e506006b03690a062ea/))
+([permalink](https://AdaptInfer.github.io/fm-survey/v/c85cb449469b31b6b728eed65453617f7993d4ce/))
 was automatically generated
-from [AdaptInfer/fm-survey@d487020](https://github.com/AdaptInfer/fm-survey/tree/d4870205b21624400bcf7e506006b03690a062ea)
+from [AdaptInfer/fm-survey@c85cb44](https://github.com/AdaptInfer/fm-survey/tree/c85cb449469b31b6b728eed65453617f7993d4ce)
 on May 4, 2026.
 </em></small>
 
@@ -151,10 +151,43 @@ Overview of foundation models trained directly on biomedical data across major m
 How general-purpose foundation models (e.g., large language and vision models) are adapted to biomedical applications through prompting, fine-tuning, and tool use.
 
 
+## Overview
+An important theme in biomedical AI is that model performance depends not only on the model itself, but also on how effectively it interacts with biomedical data systems. In practice, foundation models often need to connect unstructured inputs such as clinical text, medical images, or biological sequences with structured and semi-structured resources such as electronic health records (EHRs), ontologies, and curated biomedical databases [@doi:10.1038/sdata.2016.35; @doi:10.1093/nar/gkh061; @doi:10.1093/nar/gkaa1113]. EHRs are especially challenging in this respect because they are longitudinal, sparse, noisy, and irregularly timed, with measurements collected according to clinical need rather than on a fixed schedule [@doi:10.1038/sdata.2016.35].
 
-## Integrating Foundation Models with Biomedical Data Systems
+This perspective is closely tied to the central question of this review: whether biomedical tasks are better addressed by domain-specific foundation models or by adapting general foundation models. Domain-specific models are often designed around biomedical data structures, whereas general models usually require prompting, retrieval, or tool use to interact effectively with structured biomedical information. Integration with biomedical data systems therefore provides a useful lens for comparing the strengths and limitations of these two approaches [@doi:10.1093/jamia/ocae074; @doi:10.1093/jamia/ocae202].
 
-How foundation models interact with structured biomedical data and knowledge sources, including electronic health records, ontologies, and databases.
+## Exsiting models
+Existing work on integrating foundation models with biomedical data systems can be grouped into several paradigms. These categories are not rigid, and many practical systems combine multiple strategies [@doi:10.1093/jamia/ocae074].
+
+#### Native integration in domain-specific models
+
+One approach builds domain-specific models that directly operate on biomedical structures, especially EHRs. BEHRT adapts the Transformer architecture to longitudinal patient records by modeling diagnosis and treatment codes together with visit and demographic information [@doi:10.1038/s41598-020-62922-y]. Med-BERT similarly uses large-scale structured EHR data with pretraining objectives inspired by masked language modeling to learn reusable patient representations [@doi:10.1038/s41746-021-00455-y]. Related work such as CLMBR also learns representations from longitudinal clinical records while preserving temporal structure [@doi:10.1016/j.jbi.2020.103637].
+
+The advantage of this paradigm is strong alignment with biomedical structure: temporal patterns, code co-occurrence, and patient history can be modeled more naturally than through generic text interfaces [@doi:10.1038/s41598-020-62922-y; @doi:10.1038/s41746-021-00455-y]. Its limitation is reduced portability, since these models are often tied to specific coding systems, institutions, or data formats and require substantial domain-specific pretraining [@doi:10.1016/j.jbi.2020.103637; @doi:10.1093/jamia/ocae074].
+
+#### Adaptation of general foundation models
+
+A second approach adapts general-purpose foundation models to biomedical data systems instead of designing new architectures from scratch. Structured biomedical inputs are often serialized into natural language or otherwise reformatted into model-compatible forms. Med-PaLM is a representative example, showing how a general large language model can be adapted to medical reasoning through instruction tuning rather than fully domain-specific pretraining [@doi:10.1038/s41586-023-06291-2].
+
+In practice, this adaptation may involve prompt-based serialization of patient records, biomedical fine-tuning, or tool-mediated access to external biomedical systems [@doi:10.1038/s41586-023-06291-2; @doi:10.1093/jamia/ocae074]. The main benefit is flexibility, since the same model can support multiple tasks and modalities. However, irregular time series, coded variables, and hierarchical schemas are not naturally captured through prompt text alone, so performance may depend heavily on input formatting and orchestration [@doi:10.1093/jamia/ocae202].
+
+#### Retrieval-augmented integration
+
+A third paradigm combines foundation models with external biomedical knowledge sources at inference time. Instead of relying only on parametric memory, these systems retrieve relevant papers, database entries, clinical guidelines, or ontology-linked documents and condition their outputs on that evidence [@doi:10.1093/jamia/ocaf008; @doi:10.1371/journal.pdig.0000877].
+
+Several variants already exist. Some systems use literature-grounded retrieval for biomedical question answering or clinical decision support [@doi:10.1093/jamia/ocaf008]. Others augment large language models with external medical knowledge bases, as in MKRAG [@arxiv:2309.16035]. Retrieval can also be structured rather than purely textual; for example, KG-RAG uses relations from the SPOKE biomedical knowledge graph to guide prompt generation [@doi:10.1093/bioinformatics/btae560]. These systems are attractive because they are more transparent and easier to update, but they introduce new bottlenecks when retrieval is incomplete, noisy, or poorly used by the downstream model [@doi:10.1093/jamia/ocaf008; @doi:10.1371/journal.pdig.0000877].
+
+#### Graph- and ontology-aware integration
+
+Another paradigm integrates foundation models with biomedical graphs or ontologies, especially in settings where diseases, genes, proteins, drugs, and phenotypes are linked through explicit semantic or biological relationships [@doi:10.1093/nar/gkh061; @doi:10.1093/nar/gkaa1113].
+
+Biomedical knowledge graphs can support reasoning over gene-disease-drug associations, while ontologies can constrain concept normalization and improve consistency across datasets [@doi:10.1093/bioinformatics/btae560; @doi:10.2196/62924]. In some systems, graph structure is used as an external source of biomedical facts during generation, as in KG-RAG [@doi:10.1093/bioinformatics/btae560]. In others, large language models help construct or extend graph resources from clinical text and biomedical literature [@arxiv:2301.12473]. These approaches preserve domain structure that generic sequence models often ignore, but graph resources are often incomplete, heterogeneous, and difficult to integrate cleanly with large pretrained models [@doi:10.1093/bioinformatics/btae560; @doi:10.2196/62924].
+
+#### Multimodal integration
+
+Many biomedical applications require models to combine multiple modalities, including EHR data, clinical notes, imaging, pathology slides, molecular profiles, and literature-derived knowledge [@pmid:39321458; @pmid:40754135].
+
+In clinical settings, multimodal systems may combine imaging with reports or EHR trajectories with free-text notes [@pmid:39321458]. In research settings, they may connect molecular measurements, pathology images, and knowledge-graph information for tasks such as drug discovery or precision medicine [@doi:10.1016/j.drudis.2024.104254]. More recent medical multimodal language-model work similarly aims to place visual and textual biomedical evidence into a shared reasoning framework [@pmid:39321458]. This paradigm is attractive because biomedical decision-making is rarely unimodal, but it is also one of the most difficult to implement because alignment is imperfect, modalities are often missing, and evaluation becomes more complex as the system grows [@pmid:40754135].
 
 
 ## Evaluation, Reliability, and Deployment of Biomedical Foundation Models
