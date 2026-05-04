@@ -1,1 +1,2595 @@
-[]
+[
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "7873",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Proteins are essential to life, and understanding their structure can facilitate a mechanistic understanding of their function. Through an enormous experimental effort\n                    <jats:sup>1–4</jats:sup>\n                    , the structures of around 100,000 unique proteins have been determined\n                    <jats:sup>5</jats:sup>\n                    , but this represents a small fraction of the billions of known protein sequences\n                    <jats:sup>6,7</jats:sup>\n                    . Structural coverage is bottlenecked by the months to years of painstaking effort required to determine a single protein structure. Accurate computational approaches are needed to address this gap and to enable large-scale structural bioinformatics. Predicting the three-dimensional structure that a protein will adopt based solely on its amino acid sequence—the structure prediction component of the ‘protein folding problem’\n                    <jats:sup>8</jats:sup>\n                    —has been an important open research problem for more than 50 years\n                    <jats:sup>9</jats:sup>\n                    . Despite recent progress\n                    <jats:sup>10–14</jats:sup>\n                    , existing methods fall far short of atomic accuracy, especially when no homologous structure is available. Here we provide the first computational method that can regularly predict protein structures with atomic accuracy even in cases in which no similar structure is known. We validated an entirely redesigned version of our neural network-based model, AlphaFold, in the challenging 14th Critical Assessment of protein Structure Prediction (CASP14)\n                    <jats:sup>15</jats:sup>\n                    , demonstrating accuracy competitive with experimental structures in a majority of cases and greatly outperforming other methods. Underpinning the latest version of AlphaFold is a novel machine learning approach that incorporates physical and biological knowledge about protein structure, leveraging multi-sequence alignments, into the design of the deep learning algorithm.\n                  </jats:p>",
+    "DOI": "10.1038/s41586-021-03819-2",
+    "type": "article-journal",
+    "page": "583-589",
+    "source": "Crossref",
+    "title": "Highly accurate protein structure prediction with AlphaFold",
+    "volume": "596",
+    "author": [
+      {
+        "given": "John",
+        "family": "Jumper"
+      },
+      {
+        "given": "Richard",
+        "family": "Evans"
+      },
+      {
+        "given": "Alexander",
+        "family": "Pritzel"
+      },
+      {
+        "given": "Tim",
+        "family": "Green"
+      },
+      {
+        "given": "Michael",
+        "family": "Figurnov"
+      },
+      {
+        "given": "Olaf",
+        "family": "Ronneberger"
+      },
+      {
+        "given": "Kathryn",
+        "family": "Tunyasuvunakool"
+      },
+      {
+        "given": "Russ",
+        "family": "Bates"
+      },
+      {
+        "given": "Augustin",
+        "family": "Žídek"
+      },
+      {
+        "given": "Anna",
+        "family": "Potapenko"
+      },
+      {
+        "given": "Alex",
+        "family": "Bridgland"
+      },
+      {
+        "given": "Clemens",
+        "family": "Meyer"
+      },
+      {
+        "given": "Simon A. A.",
+        "family": "Kohl"
+      },
+      {
+        "given": "Andrew J.",
+        "family": "Ballard"
+      },
+      {
+        "given": "Andrew",
+        "family": "Cowie"
+      },
+      {
+        "given": "Bernardino",
+        "family": "Romera-Paredes"
+      },
+      {
+        "given": "Stanislav",
+        "family": "Nikolov"
+      },
+      {
+        "given": "Rishub",
+        "family": "Jain"
+      },
+      {
+        "given": "Jonas",
+        "family": "Adler"
+      },
+      {
+        "given": "Trevor",
+        "family": "Back"
+      },
+      {
+        "given": "Stig",
+        "family": "Petersen"
+      },
+      {
+        "given": "David",
+        "family": "Reiman"
+      },
+      {
+        "given": "Ellen",
+        "family": "Clancy"
+      },
+      {
+        "given": "Michal",
+        "family": "Zielinski"
+      },
+      {
+        "given": "Martin",
+        "family": "Steinegger"
+      },
+      {
+        "given": "Michalina",
+        "family": "Pacholska"
+      },
+      {
+        "given": "Tamas",
+        "family": "Berghammer"
+      },
+      {
+        "given": "Sebastian",
+        "family": "Bodenstein"
+      },
+      {
+        "given": "David",
+        "family": "Silver"
+      },
+      {
+        "given": "Oriol",
+        "family": "Vinyals"
+      },
+      {
+        "given": "Andrew W.",
+        "family": "Senior"
+      },
+      {
+        "given": "Koray",
+        "family": "Kavukcuoglu"
+      },
+      {
+        "given": "Pushmeet",
+        "family": "Kohli"
+      },
+      {
+        "given": "Demis",
+        "family": "Hassabis"
+      }
+    ],
+    "container-title": "Nature",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          15
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gk7nfp",
+    "container-title-short": "Nature",
+    "PMCID": "PMC8371605",
+    "PMID": "34265844",
+    "id": "yZfcMIwh",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41586-021-03819-2"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "7972",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Large language models (LLMs) have demonstrated impressive capabilities, but the bar for clinical applications is high. Attempts to assess the clinical knowledge of models typically rely on automated evaluations based on limited benchmarks. Here, to address these limitations, we present MultiMedQA, a benchmark combining six existing medical question answering datasets spanning professional medicine, research and consumer queries and a new dataset of medical questions searched online, HealthSearchQA. We propose a human evaluation framework for model answers along multiple axes including factuality, comprehension, reasoning, possible harm and bias. In addition, we evaluate Pathways Language Model<jats:sup>1</jats:sup>(PaLM, a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM<jats:sup>2</jats:sup>on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA<jats:sup>3</jats:sup>, MedMCQA<jats:sup>4</jats:sup>, PubMedQA<jats:sup>5</jats:sup>and Measuring Massive Multitask Language Understanding (MMLU) clinical topics<jats:sup>6</jats:sup>), including 67.6% accuracy on MedQA (US Medical Licensing Exam-style questions), surpassing the prior state of the art by more than 17%. However, human evaluation reveals key gaps. To resolve this, we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains inferior to clinicians. We show that comprehension, knowledge recall and reasoning improve with model scale and instruction prompt tuning, suggesting the potential utility of LLMs in medicine. Our human evaluations reveal limitations of today’s models, reinforcing the importance of both evaluation frameworks and method development in creating safe, helpful LLMs for clinical applications.</jats:p>",
+    "DOI": "10.1038/s41586-023-06291-2",
+    "type": "article-journal",
+    "page": "172-180",
+    "source": "Crossref",
+    "title": "Large language models encode clinical knowledge",
+    "volume": "620",
+    "author": [
+      {
+        "given": "Karan",
+        "family": "Singhal"
+      },
+      {
+        "given": "Shekoofeh",
+        "family": "Azizi"
+      },
+      {
+        "given": "Tao",
+        "family": "Tu"
+      },
+      {
+        "given": "S. Sara",
+        "family": "Mahdavi"
+      },
+      {
+        "given": "Jason",
+        "family": "Wei"
+      },
+      {
+        "given": "Hyung Won",
+        "family": "Chung"
+      },
+      {
+        "given": "Nathan",
+        "family": "Scales"
+      },
+      {
+        "given": "Ajay",
+        "family": "Tanwani"
+      },
+      {
+        "given": "Heather",
+        "family": "Cole-Lewis"
+      },
+      {
+        "given": "Stephen",
+        "family": "Pfohl"
+      },
+      {
+        "given": "Perry",
+        "family": "Payne"
+      },
+      {
+        "given": "Martin",
+        "family": "Seneviratne"
+      },
+      {
+        "given": "Paul",
+        "family": "Gamble"
+      },
+      {
+        "given": "Chris",
+        "family": "Kelly"
+      },
+      {
+        "given": "Abubakr",
+        "family": "Babiker"
+      },
+      {
+        "given": "Nathanael",
+        "family": "Schärli"
+      },
+      {
+        "given": "Aakanksha",
+        "family": "Chowdhery"
+      },
+      {
+        "given": "Philip",
+        "family": "Mansfield"
+      },
+      {
+        "given": "Dina",
+        "family": "Demner-Fushman"
+      },
+      {
+        "given": "Blaise",
+        "family": "Agüera y Arcas"
+      },
+      {
+        "given": "Dale",
+        "family": "Webster"
+      },
+      {
+        "given": "Greg S.",
+        "family": "Corrado"
+      },
+      {
+        "given": "Yossi",
+        "family": "Matias"
+      },
+      {
+        "given": "Katherine",
+        "family": "Chou"
+      },
+      {
+        "given": "Juraj",
+        "family": "Gottweis"
+      },
+      {
+        "given": "Nenad",
+        "family": "Tomasev"
+      },
+      {
+        "given": "Yun",
+        "family": "Liu"
+      },
+      {
+        "given": "Alvin",
+        "family": "Rajkomar"
+      },
+      {
+        "given": "Joelle",
+        "family": "Barral"
+      },
+      {
+        "given": "Christopher",
+        "family": "Semturs"
+      },
+      {
+        "given": "Alan",
+        "family": "Karthikesalingam"
+      },
+      {
+        "given": "Vivek",
+        "family": "Natarajan"
+      }
+    ],
+    "container-title": "Nature",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          12
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gsgp8c",
+    "container-title-short": "Nature",
+    "PMCID": "PMC10396962",
+    "PMID": "37438534",
+    "id": "KONKs6Pw",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41586-023-06291-2"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "DOI": "10.1038/s41591-018-0316-z",
+    "type": "article-journal",
+    "page": "24-29",
+    "source": "Crossref",
+    "title": "A guide to deep learning in healthcare",
+    "volume": "25",
+    "author": [
+      {
+        "given": "Andre",
+        "family": "Esteva"
+      },
+      {
+        "given": "Alexandre",
+        "family": "Robicquet"
+      },
+      {
+        "given": "Bharath",
+        "family": "Ramsundar"
+      },
+      {
+        "given": "Volodymyr",
+        "family": "Kuleshov"
+      },
+      {
+        "given": "Mark",
+        "family": "DePristo"
+      },
+      {
+        "given": "Katherine",
+        "family": "Chou"
+      },
+      {
+        "given": "Claire",
+        "family": "Cui"
+      },
+      {
+        "given": "Greg",
+        "family": "Corrado"
+      },
+      {
+        "given": "Sebastian",
+        "family": "Thrun"
+      },
+      {
+        "given": "Jeff",
+        "family": "Dean"
+      }
+    ],
+    "container-title": "Nature Medicine",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gfs3s7",
+    "container-title-short": "Nat Med",
+    "PMID": "30617335",
+    "id": "HmJ24kWy",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41591-018-0316-z"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "3",
+    "DOI": "10.1038/s41591-020-0789-4",
+    "type": "article-journal",
+    "page": "364-373",
+    "source": "Crossref",
+    "title": "Early prediction of circulatory failure in the intensive care unit using machine learning",
+    "volume": "26",
+    "author": [
+      {
+        "given": "Stephanie L.",
+        "family": "Hyland"
+      },
+      {
+        "given": "Martin",
+        "family": "Faltys"
+      },
+      {
+        "given": "Matthias",
+        "family": "Hüser"
+      },
+      {
+        "given": "Xinrui",
+        "family": "Lyu"
+      },
+      {
+        "given": "Thomas",
+        "family": "Gumbsch"
+      },
+      {
+        "given": "Cristóbal",
+        "family": "Esteban"
+      },
+      {
+        "given": "Christian",
+        "family": "Bock"
+      },
+      {
+        "given": "Max",
+        "family": "Horn"
+      },
+      {
+        "given": "Michael",
+        "family": "Moor"
+      },
+      {
+        "given": "Bastian",
+        "family": "Rieck"
+      },
+      {
+        "given": "Marc",
+        "family": "Zimmermann"
+      },
+      {
+        "given": "Dean",
+        "family": "Bodenham"
+      },
+      {
+        "given": "Karsten",
+        "family": "Borgwardt"
+      },
+      {
+        "given": "Gunnar",
+        "family": "Rätsch"
+      },
+      {
+        "given": "Tobias M.",
+        "family": "Merz"
+      }
+    ],
+    "container-title": "Nature Medicine",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          3
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gg4ks8",
+    "container-title-short": "Nat Med",
+    "PMID": "32152583",
+    "id": "1uiU4Ep7",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41591-020-0789-4"
+  },
+  {
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "4",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Motivation</jats:title>\n                    <jats:p>Biomedical text mining is becoming increasingly important as the number of biomedical documents rapidly grows. With the progress in natural language processing (NLP), extracting valuable information from biomedical literature has gained popularity among researchers, and deep learning has boosted the development of effective biomedical text mining models. However, directly applying the advancements in NLP to biomedical text mining often yields unsatisfactory results due to a word distribution shift from general domain corpora to biomedical corpora. In this article, we investigate how the recently introduced pre-trained language model BERT can be adapted for biomedical corpora.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>We introduce BioBERT (Bidirectional Encoder Representations from Transformers for Biomedical Text Mining), which is a domain-specific language representation model pre-trained on large-scale biomedical corpora. With almost the same architecture across tasks, BioBERT largely outperforms BERT and previous state-of-the-art models in a variety of biomedical text mining tasks when pre-trained on biomedical corpora. While BERT obtains performance comparable to that of previous state-of-the-art models, BioBERT significantly outperforms them on the following three representative biomedical text mining tasks: biomedical named entity recognition (0.62% F1 score improvement), biomedical relation extraction (2.80% F1 score improvement) and biomedical question answering (12.24% MRR improvement). Our analysis results show that pre-training BERT on biomedical corpora helps it to understand complex biomedical texts.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Availability and implementation</jats:title>\n                    <jats:p>We make the pre-trained weights of BioBERT freely available at https://github.com/naver/biobert-pretrained, and the source code for fine-tuning BioBERT available at https://github.com/dmis-lab/biobert.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1093/bioinformatics/btz682",
+    "type": "article-journal",
+    "page": "1234-1240",
+    "source": "Crossref",
+    "title": "BioBERT: a pre-trained biomedical language representation model for biomedical text mining",
+    "volume": "36",
+    "author": [
+      {
+        "given": "Jinhyuk",
+        "family": "Lee"
+      },
+      {
+        "given": "Wonjin",
+        "family": "Yoon"
+      },
+      {
+        "given": "Sungdong",
+        "family": "Kim"
+      },
+      {
+        "given": "Donghyeon",
+        "family": "Kim"
+      },
+      {
+        "given": "Sunkyu",
+        "family": "Kim"
+      },
+      {
+        "given": "Chan Ho",
+        "family": "So"
+      },
+      {
+        "given": "Jaewoo",
+        "family": "Kang"
+      }
+    ],
+    "container-title": "Bioinformatics",
+    "language": "en",
+    "editor": [
+      {
+        "given": "Jonathan",
+        "family": "Wren"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          10
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggh5qq",
+    "PMCID": "PMC7703786",
+    "PMID": "31501885",
+    "id": "SkPpj3hW",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1093/bioinformatics/btz682"
+  },
+  {
+    "type": "article",
+    "id": "zPozLA0K",
+    "categories": [
+      "Machine Learning (cs.LG)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Guo",
+        "given": "Chuan"
+      },
+      {
+        "family": "Pleiss",
+        "given": "Geoff"
+      },
+      {
+        "family": "Sun",
+        "given": "Yu"
+      },
+      {
+        "family": "Weinberger",
+        "given": "Kilian Q."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "abstract": "Confidence calibration -- the problem of predicting probability estimates representative of the true correctness likelihood -- is important for classification models in many applications. We discover that modern neural networks, unlike those from a decade ago, are poorly calibrated. Through extensive experiments, we observe that depth, width, weight decay, and Batch Normalization are important factors influencing calibration. We evaluate the performance of various post-processing calibration methods on state-of-the-art architectures with image and document classification datasets. Our analysis and experiments not only offer insights into neural network learning, but also provide a simple and straightforward recipe for practical settings: on most datasets, temperature scaling -- a single-parameter variant of Platt Scaling -- is surprisingly effective at calibrating predictions.",
+    "DOI": "10.48550/arxiv.1706.04599",
+    "publisher": "arXiv",
+    "title": "On Calibration of Modern Neural Networks",
+    "URL": "https://doi.org/g95xv6",
+    "version": "2",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.1706.04599"
+  },
+  {
+    "type": "article",
+    "id": "pkTWVO8e",
+    "categories": [
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Huang",
+        "given": "Kexin"
+      },
+      {
+        "family": "Altosaar",
+        "given": "Jaan"
+      },
+      {
+        "family": "Ranganath",
+        "given": "Rajesh"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "abstract": "Clinical notes contain information about patients that goes beyond structured data like lab values and medications. However, clinical notes have been underused relative to structured data, because notes are high-dimensional and sparse. This work develops and evaluates representations of clinical notes using bidirectional transformers (ClinicalBERT). ClinicalBERT uncovers high-quality relationships between medical concepts as judged by humans. ClinicalBert outperforms baselines on 30-day hospital readmission prediction using both discharge summaries and the first few days of notes in the intensive care unit. Code and model parameters are available.",
+    "DOI": "10.48550/arxiv.1904.05342",
+    "publisher": "arXiv",
+    "title": "ClinicalBERT: Modeling Clinical Notes and Predicting Hospital Readmission",
+    "URL": "https://doi.org/hbwx96",
+    "version": "3",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.1904.05342"
+  },
+  {
+    "type": "article",
+    "id": "tlOxObPi",
+    "categories": [
+      "Machine Learning (stat.ML)",
+      "Machine Learning (cs.LG)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Ovadia",
+        "given": "Yaniv"
+      },
+      {
+        "family": "Fertig",
+        "given": "Emily"
+      },
+      {
+        "family": "Ren",
+        "given": "Jie"
+      },
+      {
+        "family": "Nado",
+        "given": "Zachary"
+      },
+      {
+        "family": "Sculley",
+        "given": "D"
+      },
+      {
+        "family": "Nowozin",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Dillon",
+        "given": "Joshua V."
+      },
+      {
+        "family": "Lakshminarayanan",
+        "given": "Balaji"
+      },
+      {
+        "family": "Snoek",
+        "given": "Jasper"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "abstract": "Modern machine learning methods including deep learning have achieved great success in predictive accuracy for supervised learning tasks, but may still fall short in giving useful estimates of their predictive {\\em uncertainty}. Quantifying uncertainty is especially critical in real-world settings, which often involve input distributions that are shifted from the training distribution due to a variety of factors including sample bias and non-stationarity. In such settings, well calibrated uncertainty estimates convey information about when a model's output should (or should not) be trusted. Many probabilistic deep learning methods, including Bayesian-and non-Bayesian methods, have been proposed in the literature for quantifying predictive uncertainty, but to our knowledge there has not previously been a rigorous large-scale empirical comparison of these methods under dataset shift. We present a large-scale benchmark of existing state-of-the-art methods on classification problems and investigate the effect of dataset shift on accuracy and calibration. We find that traditional post-hoc calibration does indeed fall short, as do several other previous methods. However, some methods that marginalize over models give surprisingly strong results across a broad spectrum of tasks.",
+    "DOI": "10.48550/arxiv.1906.02530",
+    "publisher": "arXiv",
+    "title": "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+    "URL": "https://doi.org/hbwx97",
+    "version": "2",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.1906.02530"
+  },
+  {
+    "type": "article",
+    "id": "rraUSTzS",
+    "categories": [
+      "Computation and Language (cs.CL)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Keskar",
+        "given": "Nitish Shirish"
+      },
+      {
+        "family": "McCann",
+        "given": "Bryan"
+      },
+      {
+        "family": "Varshney",
+        "given": "Lav R."
+      },
+      {
+        "family": "Xiong",
+        "given": "Caiming"
+      },
+      {
+        "family": "Socher",
+        "given": "Richard"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "abstract": "Large-scale language models show promising text generation capabilities, but users cannot easily control particular aspects of the generated text. We release CTRL, a 1.63 billion-parameter conditional transformer language model, trained to condition on control codes that govern style, content, and task-specific behavior. Control codes were derived from structure that naturally co-occurs with raw text, preserving the advantages of unsupervised learning while providing more explicit control over text generation. These codes also allow CTRL to predict which parts of the training data are most likely given a sequence. This provides a potential method for analyzing large amounts of data via model-based source attribution. We have released multiple full-sized, pretrained versions of CTRL at https://github.com/salesforce/ctrl.",
+    "DOI": "10.48550/arxiv.1909.05858",
+    "publisher": "arXiv",
+    "title": "CTRL: A Conditional Transformer Language Model for Controllable Generation",
+    "URL": "https://doi.org/hbwx98",
+    "version": "2",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.1909.05858"
+  },
+  {
+    "type": "article",
+    "id": "eHEkR4jy",
+    "categories": [
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Lewis",
+        "given": "Patrick"
+      },
+      {
+        "family": "Perez",
+        "given": "Ethan"
+      },
+      {
+        "family": "Piktus",
+        "given": "Aleksandra"
+      },
+      {
+        "family": "Petroni",
+        "given": "Fabio"
+      },
+      {
+        "family": "Karpukhin",
+        "given": "Vladimir"
+      },
+      {
+        "family": "Goyal",
+        "given": "Naman"
+      },
+      {
+        "family": "Küttler",
+        "given": "Heinrich"
+      },
+      {
+        "family": "Lewis",
+        "given": "Mike"
+      },
+      {
+        "family": "Yih",
+        "given": "Wen-tau"
+      },
+      {
+        "family": "Rocktäschel",
+        "given": "Tim"
+      },
+      {
+        "family": "Riedel",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Kiela",
+        "given": "Douwe"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+    "DOI": "10.48550/arxiv.2005.11401",
+    "publisher": "arXiv",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "URL": "https://doi.org/gtj4jn",
+    "version": "4",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.2005.11401"
+  },
+  {
+    "type": "article",
+    "id": "rtNEROOT",
+    "categories": [
+      "Computation and Language (cs.CL)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Brown",
+        "given": "Tom B."
+      },
+      {
+        "family": "Mann",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Ryder",
+        "given": "Nick"
+      },
+      {
+        "family": "Subbiah",
+        "given": "Melanie"
+      },
+      {
+        "family": "Kaplan",
+        "given": "Jared"
+      },
+      {
+        "family": "Dhariwal",
+        "given": "Prafulla"
+      },
+      {
+        "family": "Neelakantan",
+        "given": "Arvind"
+      },
+      {
+        "family": "Shyam",
+        "given": "Pranav"
+      },
+      {
+        "family": "Sastry",
+        "given": "Girish"
+      },
+      {
+        "family": "Askell",
+        "given": "Amanda"
+      },
+      {
+        "family": "Agarwal",
+        "given": "Sandhini"
+      },
+      {
+        "family": "Herbert-Voss",
+        "given": "Ariel"
+      },
+      {
+        "family": "Krueger",
+        "given": "Gretchen"
+      },
+      {
+        "family": "Henighan",
+        "given": "Tom"
+      },
+      {
+        "family": "Child",
+        "given": "Rewon"
+      },
+      {
+        "family": "Ramesh",
+        "given": "Aditya"
+      },
+      {
+        "family": "Ziegler",
+        "given": "Daniel M."
+      },
+      {
+        "family": "Wu",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Winter",
+        "given": "Clemens"
+      },
+      {
+        "family": "Hesse",
+        "given": "Christopher"
+      },
+      {
+        "family": "Chen",
+        "given": "Mark"
+      },
+      {
+        "family": "Sigler",
+        "given": "Eric"
+      },
+      {
+        "family": "Litwin",
+        "given": "Mateusz"
+      },
+      {
+        "family": "Gray",
+        "given": "Scott"
+      },
+      {
+        "family": "Chess",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Clark",
+        "given": "Jack"
+      },
+      {
+        "family": "Berner",
+        "given": "Christopher"
+      },
+      {
+        "family": "McCandlish",
+        "given": "Sam"
+      },
+      {
+        "family": "Radford",
+        "given": "Alec"
+      },
+      {
+        "family": "Sutskever",
+        "given": "Ilya"
+      },
+      {
+        "family": "Amodei",
+        "given": "Dario"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "abstract": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.",
+    "DOI": "10.48550/arxiv.2005.14165",
+    "publisher": "arXiv",
+    "title": "Language Models are Few-Shot Learners",
+    "URL": "https://doi.org/gpmv43",
+    "version": "4",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.2005.14165"
+  },
+  {
+    "type": "article",
+    "id": "OGZ3JiLF",
+    "categories": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Ouyang",
+        "given": "Long"
+      },
+      {
+        "family": "Wu",
+        "given": "Jeff"
+      },
+      {
+        "family": "Jiang",
+        "given": "Xu"
+      },
+      {
+        "family": "Almeida",
+        "given": "Diogo"
+      },
+      {
+        "family": "Wainwright",
+        "given": "Carroll L."
+      },
+      {
+        "family": "Mishkin",
+        "given": "Pamela"
+      },
+      {
+        "family": "Zhang",
+        "given": "Chong"
+      },
+      {
+        "family": "Agarwal",
+        "given": "Sandhini"
+      },
+      {
+        "family": "Slama",
+        "given": "Katarina"
+      },
+      {
+        "family": "Ray",
+        "given": "Alex"
+      },
+      {
+        "family": "Schulman",
+        "given": "John"
+      },
+      {
+        "family": "Hilton",
+        "given": "Jacob"
+      },
+      {
+        "family": "Kelton",
+        "given": "Fraser"
+      },
+      {
+        "family": "Miller",
+        "given": "Luke"
+      },
+      {
+        "family": "Simens",
+        "given": "Maddie"
+      },
+      {
+        "family": "Askell",
+        "given": "Amanda"
+      },
+      {
+        "family": "Welinder",
+        "given": "Peter"
+      },
+      {
+        "family": "Christiano",
+        "given": "Paul"
+      },
+      {
+        "family": "Leike",
+        "given": "Jan"
+      },
+      {
+        "family": "Lowe",
+        "given": "Ryan"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "abstract": "Making language models bigger does not inherently make them better at following a user's intent. For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. In other words, these models are not aligned with their users. In this paper, we show an avenue for aligning language models with user intent on a wide range of tasks by fine-tuning with human feedback. Starting with a set of labeler-written prompts and prompts submitted through the OpenAI API, we collect a dataset of labeler demonstrations of the desired model behavior, which we use to fine-tune GPT-3 using supervised learning. We then collect a dataset of rankings of model outputs, which we use to further fine-tune this supervised model using reinforcement learning from human feedback. We call the resulting models InstructGPT. In human evaluations on our prompt distribution, outputs from the 1.3B parameter InstructGPT model are preferred to outputs from the 175B GPT-3, despite having 100x fewer parameters. Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent.",
+    "DOI": "10.48550/arxiv.2203.02155",
+    "publisher": "arXiv",
+    "title": "Training language models to follow instructions with human feedback",
+    "URL": "https://doi.org/gsdzm3",
+    "version": "1",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.2203.02155"
+  },
+  {
+    "type": "article",
+    "id": "JIjeWPOb",
+    "categories": [
+      "Computation and Language (cs.CL)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Chowdhery",
+        "given": "Aakanksha"
+      },
+      {
+        "family": "Narang",
+        "given": "Sharan"
+      },
+      {
+        "family": "Devlin",
+        "given": "Jacob"
+      },
+      {
+        "family": "Bosma",
+        "given": "Maarten"
+      },
+      {
+        "family": "Mishra",
+        "given": "Gaurav"
+      },
+      {
+        "family": "Roberts",
+        "given": "Adam"
+      },
+      {
+        "family": "Barham",
+        "given": "Paul"
+      },
+      {
+        "family": "Chung",
+        "given": "Hyung Won"
+      },
+      {
+        "family": "Sutton",
+        "given": "Charles"
+      },
+      {
+        "family": "Gehrmann",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Schuh",
+        "given": "Parker"
+      },
+      {
+        "family": "Shi",
+        "given": "Kensen"
+      },
+      {
+        "family": "Tsvyashchenko",
+        "given": "Sasha"
+      },
+      {
+        "family": "Maynez",
+        "given": "Joshua"
+      },
+      {
+        "family": "Rao",
+        "given": "Abhishek"
+      },
+      {
+        "family": "Barnes",
+        "given": "Parker"
+      },
+      {
+        "family": "Tay",
+        "given": "Yi"
+      },
+      {
+        "family": "Shazeer",
+        "given": "Noam"
+      },
+      {
+        "family": "Prabhakaran",
+        "given": "Vinodkumar"
+      },
+      {
+        "family": "Reif",
+        "given": "Emily"
+      },
+      {
+        "family": "Du",
+        "given": "Nan"
+      },
+      {
+        "family": "Hutchinson",
+        "given": "Ben"
+      },
+      {
+        "family": "Pope",
+        "given": "Reiner"
+      },
+      {
+        "family": "Bradbury",
+        "given": "James"
+      },
+      {
+        "family": "Austin",
+        "given": "Jacob"
+      },
+      {
+        "family": "Isard",
+        "given": "Michael"
+      },
+      {
+        "family": "Gur-Ari",
+        "given": "Guy"
+      },
+      {
+        "family": "Yin",
+        "given": "Pengcheng"
+      },
+      {
+        "family": "Duke",
+        "given": "Toju"
+      },
+      {
+        "family": "Levskaya",
+        "given": "Anselm"
+      },
+      {
+        "family": "Ghemawat",
+        "given": "Sanjay"
+      },
+      {
+        "family": "Dev",
+        "given": "Sunipa"
+      },
+      {
+        "family": "Michalewski",
+        "given": "Henryk"
+      },
+      {
+        "family": "Garcia",
+        "given": "Xavier"
+      },
+      {
+        "family": "Misra",
+        "given": "Vedant"
+      },
+      {
+        "family": "Robinson",
+        "given": "Kevin"
+      },
+      {
+        "family": "Fedus",
+        "given": "Liam"
+      },
+      {
+        "family": "Zhou",
+        "given": "Denny"
+      },
+      {
+        "family": "Ippolito",
+        "given": "Daphne"
+      },
+      {
+        "family": "Luan",
+        "given": "David"
+      },
+      {
+        "family": "Lim",
+        "given": "Hyeontaek"
+      },
+      {
+        "family": "Zoph",
+        "given": "Barret"
+      },
+      {
+        "family": "Spiridonov",
+        "given": "Alexander"
+      },
+      {
+        "family": "Sepassi",
+        "given": "Ryan"
+      },
+      {
+        "family": "Dohan",
+        "given": "David"
+      },
+      {
+        "family": "Agrawal",
+        "given": "Shivani"
+      },
+      {
+        "family": "Omernick",
+        "given": "Mark"
+      },
+      {
+        "family": "Dai",
+        "given": "Andrew M."
+      },
+      {
+        "family": "Pillai",
+        "given": "Thanumalayan Sankaranarayana"
+      },
+      {
+        "family": "Pellat",
+        "given": "Marie"
+      },
+      {
+        "family": "Lewkowycz",
+        "given": "Aitor"
+      },
+      {
+        "family": "Moreira",
+        "given": "Erica"
+      },
+      {
+        "family": "Child",
+        "given": "Rewon"
+      },
+      {
+        "family": "Polozov",
+        "given": "Oleksandr"
+      },
+      {
+        "family": "Lee",
+        "given": "Katherine"
+      },
+      {
+        "family": "Zhou",
+        "given": "Zongwei"
+      },
+      {
+        "family": "Wang",
+        "given": "Xuezhi"
+      },
+      {
+        "family": "Saeta",
+        "given": "Brennan"
+      },
+      {
+        "family": "Diaz",
+        "given": "Mark"
+      },
+      {
+        "family": "Firat",
+        "given": "Orhan"
+      },
+      {
+        "family": "Catasta",
+        "given": "Michele"
+      },
+      {
+        "family": "Wei",
+        "given": "Jason"
+      },
+      {
+        "family": "Meier-Hellstern",
+        "given": "Kathy"
+      },
+      {
+        "family": "Eck",
+        "given": "Douglas"
+      },
+      {
+        "family": "Dean",
+        "given": "Jeff"
+      },
+      {
+        "family": "Petrov",
+        "given": "Slav"
+      },
+      {
+        "family": "Fiedel",
+        "given": "Noah"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "abstract": "Large language models have been shown to achieve remarkable performance across a variety of natural language tasks using few-shot learning, which drastically reduces the number of task-specific training examples needed to adapt the model to a particular application. To further our understanding of the impact of scale on few-shot learning, we trained a 540-billion parameter, densely activated, Transformer language model, which we call Pathways Language Model PaLM. We trained PaLM on 6144 TPU v4 chips using Pathways, a new ML system which enables highly efficient training across multiple TPU Pods. We demonstrate continued benefits of scaling by achieving state-of-the-art few-shot learning results on hundreds of language understanding and generation benchmarks. On a number of these tasks, PaLM 540B achieves breakthrough performance, outperforming the finetuned state-of-the-art on a suite of multi-step reasoning tasks, and outperforming average human performance on the recently released BIG-bench benchmark. A significant number of BIG-bench tasks showed discontinuous improvements from model scale, meaning that performance steeply increased as we scaled to our largest model. PaLM also has strong capabilities in multilingual tasks and source code generation, which we demonstrate on a wide array of benchmarks. We additionally provide a comprehensive analysis on bias and toxicity, and study the extent of training data memorization with respect to model scale. Finally, we discuss the ethical considerations related to large language models and discuss potential mitigation strategies.",
+    "DOI": "10.48550/arxiv.2204.02311",
+    "publisher": "arXiv",
+    "title": "PaLM: Scaling Language Modeling with Pathways",
+    "URL": "https://doi.org/kfxf",
+    "version": "5",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.2204.02311"
+  },
+  {
+    "type": "article",
+    "id": "9a3KM9IA",
+    "categories": [
+      "Signal Processing (eess.SP)",
+      "FOS: Electrical engineering, electronic engineering, information engineering",
+      "FOS: Electrical engineering, electronic engineering, information engineering"
+    ],
+    "author": [
+      {
+        "family": "Li",
+        "given": "Yunxin"
+      },
+      {
+        "family": "Liu",
+        "given": "Fan"
+      },
+      {
+        "family": "Du",
+        "given": "Zhen"
+      },
+      {
+        "family": "Yuan",
+        "given": "Weijie"
+      },
+      {
+        "family": "Masouros",
+        "given": "Christos"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "abstract": "The emergence of the fifth-generation (5G) New Radio (NR) brings additional possibilities to vehicle-to-everything (V2X) network with improved quality of services. In order to obtain accurate channel state information (CSI) in high-mobility V2X networks, pilot signals and frequent handover between vehicles and infrastructures are required to establish and maintain the communication link, which increases the overheads and reduces the communication throughput. To address this issue, integrated sensing and communications (ISAC) was employed at the base station (BS) in the vehicle-to-infrastructure (V2I) network to reduce a certain amount of overheads, thus improve the spectral efficiency. Nevertheless, the exact amount of overheads reduction remains unclear, particularly for practical NR based V2X networks. In this paper, we study a link-level NR based V2I system employing ISAC signaling to facilitate the communication beam management, where the Extended Kalman filtering (EKF) algorithm is performed to realize the functions of tracking and predicting the motion of the vehicle. We provide detailed analysis on the overheads reduction with the aid of ISAC, and show that up to 43.24% overheads can be reduced under assigned NR frame structure. In addition, numerical results are provided to validate the improved performance on the beam tracking and communication throughput.",
+    "DOI": "10.48550/arxiv.2301.12787",
+    "publisher": "arXiv",
+    "title": "ISAC-Enabled V2I Networks Based on 5G NR: How Much Can the Overhead Be Reduced?",
+    "URL": "https://doi.org/hbwx99",
+    "version": "2",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.2301.12787"
+  },
+  {
+    "type": "article",
+    "id": "17lpGtuH5",
+    "categories": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "OpenAI"
+      },
+      {
+        "family": "Achiam",
+        "given": "Josh"
+      },
+      {
+        "family": "Adler",
+        "given": "Steven"
+      },
+      {
+        "family": "Agarwal",
+        "given": "Sandhini"
+      },
+      {
+        "family": "Ahmad",
+        "given": "Lama"
+      },
+      {
+        "family": "Akkaya",
+        "given": "Ilge"
+      },
+      {
+        "family": "Aleman",
+        "given": "Florencia Leoni"
+      },
+      {
+        "family": "Almeida",
+        "given": "Diogo"
+      },
+      {
+        "family": "Altenschmidt",
+        "given": "Janko"
+      },
+      {
+        "family": "Altman",
+        "given": "Sam"
+      },
+      {
+        "family": "Anadkat",
+        "given": "Shyamal"
+      },
+      {
+        "family": "Avila",
+        "given": "Red"
+      },
+      {
+        "family": "Babuschkin",
+        "given": "Igor"
+      },
+      {
+        "family": "Balaji",
+        "given": "Suchir"
+      },
+      {
+        "family": "Balcom",
+        "given": "Valerie"
+      },
+      {
+        "family": "Baltescu",
+        "given": "Paul"
+      },
+      {
+        "family": "Bao",
+        "given": "Haiming"
+      },
+      {
+        "family": "Bavarian",
+        "given": "Mohammad"
+      },
+      {
+        "family": "Belgum",
+        "given": "Jeff"
+      },
+      {
+        "family": "Bello",
+        "given": "Irwan"
+      },
+      {
+        "family": "Berdine",
+        "given": "Jake"
+      },
+      {
+        "family": "Bernadett-Shapiro",
+        "given": "Gabriel"
+      },
+      {
+        "family": "Berner",
+        "given": "Christopher"
+      },
+      {
+        "family": "Bogdonoff",
+        "given": "Lenny"
+      },
+      {
+        "family": "Boiko",
+        "given": "Oleg"
+      },
+      {
+        "family": "Boyd",
+        "given": "Madelaine"
+      },
+      {
+        "family": "Brakman",
+        "given": "Anna-Luisa"
+      },
+      {
+        "family": "Brockman",
+        "given": "Greg"
+      },
+      {
+        "family": "Brooks",
+        "given": "Tim"
+      },
+      {
+        "family": "Brundage",
+        "given": "Miles"
+      },
+      {
+        "family": "Button",
+        "given": "Kevin"
+      },
+      {
+        "family": "Cai",
+        "given": "Trevor"
+      },
+      {
+        "family": "Campbell",
+        "given": "Rosie"
+      },
+      {
+        "family": "Cann",
+        "given": "Andrew"
+      },
+      {
+        "family": "Carey",
+        "given": "Brittany"
+      },
+      {
+        "family": "Carlson",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Carmichael",
+        "given": "Rory"
+      },
+      {
+        "family": "Chan",
+        "given": "Brooke"
+      },
+      {
+        "family": "Chang",
+        "given": "Che"
+      },
+      {
+        "family": "Chantzis",
+        "given": "Fotis"
+      },
+      {
+        "family": "Chen",
+        "given": "Derek"
+      },
+      {
+        "family": "Chen",
+        "given": "Sully"
+      },
+      {
+        "family": "Chen",
+        "given": "Ruby"
+      },
+      {
+        "family": "Chen",
+        "given": "Jason"
+      },
+      {
+        "family": "Chen",
+        "given": "Mark"
+      },
+      {
+        "family": "Chess",
+        "given": "Ben"
+      },
+      {
+        "family": "Cho",
+        "given": "Chester"
+      },
+      {
+        "family": "Chu",
+        "given": "Casey"
+      },
+      {
+        "family": "Chung",
+        "given": "Hyung Won"
+      },
+      {
+        "family": "Cummings",
+        "given": "Dave"
+      },
+      {
+        "family": "Currier",
+        "given": "Jeremiah"
+      },
+      {
+        "family": "Dai",
+        "given": "Yunxing"
+      },
+      {
+        "family": "Decareaux",
+        "given": "Cory"
+      },
+      {
+        "family": "Degry",
+        "given": "Thomas"
+      },
+      {
+        "family": "Deutsch",
+        "given": "Noah"
+      },
+      {
+        "family": "Deville",
+        "given": "Damien"
+      },
+      {
+        "family": "Dhar",
+        "given": "Arka"
+      },
+      {
+        "family": "Dohan",
+        "given": "David"
+      },
+      {
+        "family": "Dowling",
+        "given": "Steve"
+      },
+      {
+        "family": "Dunning",
+        "given": "Sheila"
+      },
+      {
+        "family": "Ecoffet",
+        "given": "Adrien"
+      },
+      {
+        "family": "Eleti",
+        "given": "Atty"
+      },
+      {
+        "family": "Eloundou",
+        "given": "Tyna"
+      },
+      {
+        "family": "Farhi",
+        "given": "David"
+      },
+      {
+        "family": "Fedus",
+        "given": "Liam"
+      },
+      {
+        "family": "Felix",
+        "given": "Niko"
+      },
+      {
+        "family": "Fishman",
+        "given": "Simón Posada"
+      },
+      {
+        "family": "Forte",
+        "given": "Juston"
+      },
+      {
+        "family": "Fulford",
+        "given": "Isabella"
+      },
+      {
+        "family": "Gao",
+        "given": "Leo"
+      },
+      {
+        "family": "Georges",
+        "given": "Elie"
+      },
+      {
+        "family": "Gibson",
+        "given": "Christian"
+      },
+      {
+        "family": "Goel",
+        "given": "Vik"
+      },
+      {
+        "family": "Gogineni",
+        "given": "Tarun"
+      },
+      {
+        "family": "Goh",
+        "given": "Gabriel"
+      },
+      {
+        "family": "Gontijo-Lopes",
+        "given": "Rapha"
+      },
+      {
+        "family": "Gordon",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Grafstein",
+        "given": "Morgan"
+      },
+      {
+        "family": "Gray",
+        "given": "Scott"
+      },
+      {
+        "family": "Greene",
+        "given": "Ryan"
+      },
+      {
+        "family": "Gross",
+        "given": "Joshua"
+      },
+      {
+        "family": "Gu",
+        "given": "Shixiang Shane"
+      },
+      {
+        "family": "Guo",
+        "given": "Yufei"
+      },
+      {
+        "family": "Hallacy",
+        "given": "Chris"
+      },
+      {
+        "family": "Han",
+        "given": "Jesse"
+      },
+      {
+        "family": "Harris",
+        "given": "Jeff"
+      },
+      {
+        "family": "He",
+        "given": "Yuchen"
+      },
+      {
+        "family": "Heaton",
+        "given": "Mike"
+      },
+      {
+        "family": "Heidecke",
+        "given": "Johannes"
+      },
+      {
+        "family": "Hesse",
+        "given": "Chris"
+      },
+      {
+        "family": "Hickey",
+        "given": "Alan"
+      },
+      {
+        "family": "Hickey",
+        "given": "Wade"
+      },
+      {
+        "family": "Hoeschele",
+        "given": "Peter"
+      },
+      {
+        "family": "Houghton",
+        "given": "Brandon"
+      },
+      {
+        "family": "Hsu",
+        "given": "Kenny"
+      },
+      {
+        "family": "Hu",
+        "given": "Shengli"
+      },
+      {
+        "family": "Hu",
+        "given": "Xin"
+      },
+      {
+        "family": "Huizinga",
+        "given": "Joost"
+      },
+      {
+        "family": "Jain",
+        "given": "Shantanu"
+      },
+      {
+        "family": "Jain",
+        "given": "Shawn"
+      },
+      {
+        "family": "Jang",
+        "given": "Joanne"
+      },
+      {
+        "family": "Jiang",
+        "given": "Angela"
+      },
+      {
+        "family": "Jiang",
+        "given": "Roger"
+      },
+      {
+        "family": "Jin",
+        "given": "Haozhun"
+      },
+      {
+        "family": "Jin",
+        "given": "Denny"
+      },
+      {
+        "family": "Jomoto",
+        "given": "Shino"
+      },
+      {
+        "family": "Jonn",
+        "given": "Billie"
+      },
+      {
+        "family": "Jun",
+        "given": "Heewoo"
+      },
+      {
+        "family": "Kaftan",
+        "given": "Tomer"
+      },
+      {
+        "family": "Kaiser",
+        "given": "Łukasz"
+      },
+      {
+        "family": "Kamali",
+        "given": "Ali"
+      },
+      {
+        "family": "Kanitscheider",
+        "given": "Ingmar"
+      },
+      {
+        "family": "Keskar",
+        "given": "Nitish Shirish"
+      },
+      {
+        "family": "Khan",
+        "given": "Tabarak"
+      },
+      {
+        "family": "Kilpatrick",
+        "given": "Logan"
+      },
+      {
+        "family": "Kim",
+        "given": "Jong Wook"
+      },
+      {
+        "family": "Kim",
+        "given": "Christina"
+      },
+      {
+        "family": "Kim",
+        "given": "Yongjik"
+      },
+      {
+        "family": "Kirchner",
+        "given": "Jan Hendrik"
+      },
+      {
+        "family": "Kiros",
+        "given": "Jamie"
+      },
+      {
+        "family": "Knight",
+        "given": "Matt"
+      },
+      {
+        "family": "Kokotajlo",
+        "given": "Daniel"
+      },
+      {
+        "family": "Kondraciuk",
+        "given": "Łukasz"
+      },
+      {
+        "family": "Kondrich",
+        "given": "Andrew"
+      },
+      {
+        "family": "Konstantinidis",
+        "given": "Aris"
+      },
+      {
+        "family": "Kosic",
+        "given": "Kyle"
+      },
+      {
+        "family": "Krueger",
+        "given": "Gretchen"
+      },
+      {
+        "family": "Kuo",
+        "given": "Vishal"
+      },
+      {
+        "family": "Lampe",
+        "given": "Michael"
+      },
+      {
+        "family": "Lan",
+        "given": "Ikai"
+      },
+      {
+        "family": "Lee",
+        "given": "Teddy"
+      },
+      {
+        "family": "Leike",
+        "given": "Jan"
+      },
+      {
+        "family": "Leung",
+        "given": "Jade"
+      },
+      {
+        "family": "Levy",
+        "given": "Daniel"
+      },
+      {
+        "family": "Li",
+        "given": "Chak Ming"
+      },
+      {
+        "family": "Lim",
+        "given": "Rachel"
+      },
+      {
+        "family": "Lin",
+        "given": "Molly"
+      },
+      {
+        "family": "Lin",
+        "given": "Stephanie"
+      },
+      {
+        "family": "Litwin",
+        "given": "Mateusz"
+      },
+      {
+        "family": "Lopez",
+        "given": "Theresa"
+      },
+      {
+        "family": "Lowe",
+        "given": "Ryan"
+      },
+      {
+        "family": "Lue",
+        "given": "Patricia"
+      },
+      {
+        "family": "Makanju",
+        "given": "Anna"
+      },
+      {
+        "family": "Malfacini",
+        "given": "Kim"
+      },
+      {
+        "family": "Manning",
+        "given": "Sam"
+      },
+      {
+        "family": "Markov",
+        "given": "Todor"
+      },
+      {
+        "family": "Markovski",
+        "given": "Yaniv"
+      },
+      {
+        "family": "Martin",
+        "given": "Bianca"
+      },
+      {
+        "family": "Mayer",
+        "given": "Katie"
+      },
+      {
+        "family": "Mayne",
+        "given": "Andrew"
+      },
+      {
+        "family": "McGrew",
+        "given": "Bob"
+      },
+      {
+        "family": "McKinney",
+        "given": "Scott Mayer"
+      },
+      {
+        "family": "McLeavey",
+        "given": "Christine"
+      },
+      {
+        "family": "McMillan",
+        "given": "Paul"
+      },
+      {
+        "family": "McNeil",
+        "given": "Jake"
+      },
+      {
+        "family": "Medina",
+        "given": "David"
+      },
+      {
+        "family": "Mehta",
+        "given": "Aalok"
+      },
+      {
+        "family": "Menick",
+        "given": "Jacob"
+      },
+      {
+        "family": "Metz",
+        "given": "Luke"
+      },
+      {
+        "family": "Mishchenko",
+        "given": "Andrey"
+      },
+      {
+        "family": "Mishkin",
+        "given": "Pamela"
+      },
+      {
+        "family": "Monaco",
+        "given": "Vinnie"
+      },
+      {
+        "family": "Morikawa",
+        "given": "Evan"
+      },
+      {
+        "family": "Mossing",
+        "given": "Daniel"
+      },
+      {
+        "family": "Mu",
+        "given": "Tong"
+      },
+      {
+        "family": "Murati",
+        "given": "Mira"
+      },
+      {
+        "family": "Murk",
+        "given": "Oleg"
+      },
+      {
+        "family": "Mély",
+        "given": "David"
+      },
+      {
+        "family": "Nair",
+        "given": "Ashvin"
+      },
+      {
+        "family": "Nakano",
+        "given": "Reiichiro"
+      },
+      {
+        "family": "Nayak",
+        "given": "Rajeev"
+      },
+      {
+        "family": "Neelakantan",
+        "given": "Arvind"
+      },
+      {
+        "family": "Ngo",
+        "given": "Richard"
+      },
+      {
+        "family": "Noh",
+        "given": "Hyeonwoo"
+      },
+      {
+        "family": "Ouyang",
+        "given": "Long"
+      },
+      {
+        "family": "O'Keefe",
+        "given": "Cullen"
+      },
+      {
+        "family": "Pachocki",
+        "given": "Jakub"
+      },
+      {
+        "family": "Paino",
+        "given": "Alex"
+      },
+      {
+        "family": "Palermo",
+        "given": "Joe"
+      },
+      {
+        "family": "Pantuliano",
+        "given": "Ashley"
+      },
+      {
+        "family": "Parascandolo",
+        "given": "Giambattista"
+      },
+      {
+        "family": "Parish",
+        "given": "Joel"
+      },
+      {
+        "family": "Parparita",
+        "given": "Emy"
+      },
+      {
+        "family": "Passos",
+        "given": "Alex"
+      },
+      {
+        "family": "Pavlov",
+        "given": "Mikhail"
+      },
+      {
+        "family": "Peng",
+        "given": "Andrew"
+      },
+      {
+        "family": "Perelman",
+        "given": "Adam"
+      },
+      {
+        "family": "Peres",
+        "given": "Filipe de Avila Belbute"
+      },
+      {
+        "family": "Petrov",
+        "given": "Michael"
+      },
+      {
+        "family": "Pinto",
+        "given": "Henrique Ponde de Oliveira"
+      },
+      {
+        "family": "Michael"
+      },
+      {
+        "literal": "Pokorny"
+      },
+      {
+        "family": "Pokrass",
+        "given": "Michelle"
+      },
+      {
+        "family": "Pong",
+        "given": "Vitchyr H."
+      },
+      {
+        "family": "Powell",
+        "given": "Tolly"
+      },
+      {
+        "family": "Power",
+        "given": "Alethea"
+      },
+      {
+        "family": "Power",
+        "given": "Boris"
+      },
+      {
+        "family": "Proehl",
+        "given": "Elizabeth"
+      },
+      {
+        "family": "Puri",
+        "given": "Raul"
+      },
+      {
+        "family": "Radford",
+        "given": "Alec"
+      },
+      {
+        "family": "Rae",
+        "given": "Jack"
+      },
+      {
+        "family": "Ramesh",
+        "given": "Aditya"
+      },
+      {
+        "family": "Raymond",
+        "given": "Cameron"
+      },
+      {
+        "family": "Real",
+        "given": "Francis"
+      },
+      {
+        "family": "Rimbach",
+        "given": "Kendra"
+      },
+      {
+        "family": "Ross",
+        "given": "Carl"
+      },
+      {
+        "family": "Rotsted",
+        "given": "Bob"
+      },
+      {
+        "family": "Roussez",
+        "given": "Henri"
+      },
+      {
+        "family": "Ryder",
+        "given": "Nick"
+      },
+      {
+        "family": "Saltarelli",
+        "given": "Mario"
+      },
+      {
+        "family": "Sanders",
+        "given": "Ted"
+      },
+      {
+        "family": "Santurkar",
+        "given": "Shibani"
+      },
+      {
+        "family": "Sastry",
+        "given": "Girish"
+      },
+      {
+        "family": "Schmidt",
+        "given": "Heather"
+      },
+      {
+        "family": "Schnurr",
+        "given": "David"
+      },
+      {
+        "family": "Schulman",
+        "given": "John"
+      },
+      {
+        "family": "Selsam",
+        "given": "Daniel"
+      },
+      {
+        "family": "Sheppard",
+        "given": "Kyla"
+      },
+      {
+        "family": "Sherbakov",
+        "given": "Toki"
+      },
+      {
+        "family": "Shieh",
+        "given": "Jessica"
+      },
+      {
+        "family": "Shoker",
+        "given": "Sarah"
+      },
+      {
+        "family": "Shyam",
+        "given": "Pranav"
+      },
+      {
+        "family": "Sidor",
+        "given": "Szymon"
+      },
+      {
+        "family": "Sigler",
+        "given": "Eric"
+      },
+      {
+        "family": "Simens",
+        "given": "Maddie"
+      },
+      {
+        "family": "Sitkin",
+        "given": "Jordan"
+      },
+      {
+        "family": "Slama",
+        "given": "Katarina"
+      },
+      {
+        "family": "Sohl",
+        "given": "Ian"
+      },
+      {
+        "family": "Sokolowsky",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Song",
+        "given": "Yang"
+      },
+      {
+        "family": "Staudacher",
+        "given": "Natalie"
+      },
+      {
+        "family": "Such",
+        "given": "Felipe Petroski"
+      },
+      {
+        "family": "Summers",
+        "given": "Natalie"
+      },
+      {
+        "family": "Sutskever",
+        "given": "Ilya"
+      },
+      {
+        "family": "Tang",
+        "given": "Jie"
+      },
+      {
+        "family": "Tezak",
+        "given": "Nikolas"
+      },
+      {
+        "family": "Thompson",
+        "given": "Madeleine B."
+      },
+      {
+        "family": "Tillet",
+        "given": "Phil"
+      },
+      {
+        "family": "Tootoonchian",
+        "given": "Amin"
+      },
+      {
+        "family": "Tseng",
+        "given": "Elizabeth"
+      },
+      {
+        "family": "Tuggle",
+        "given": "Preston"
+      },
+      {
+        "family": "Turley",
+        "given": "Nick"
+      },
+      {
+        "family": "Tworek",
+        "given": "Jerry"
+      },
+      {
+        "family": "Uribe",
+        "given": "Juan Felipe Cerón"
+      },
+      {
+        "family": "Vallone",
+        "given": "Andrea"
+      },
+      {
+        "family": "Vijayvergiya",
+        "given": "Arun"
+      },
+      {
+        "family": "Voss",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Wainwright",
+        "given": "Carroll"
+      },
+      {
+        "family": "Wang",
+        "given": "Justin Jay"
+      },
+      {
+        "family": "Wang",
+        "given": "Alvin"
+      },
+      {
+        "family": "Wang",
+        "given": "Ben"
+      },
+      {
+        "family": "Ward",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Wei",
+        "given": "Jason"
+      },
+      {
+        "family": "Weinmann",
+        "given": "CJ"
+      },
+      {
+        "family": "Welihinda",
+        "given": "Akila"
+      },
+      {
+        "family": "Welinder",
+        "given": "Peter"
+      },
+      {
+        "family": "Weng",
+        "given": "Jiayi"
+      },
+      {
+        "family": "Weng",
+        "given": "Lilian"
+      },
+      {
+        "family": "Wiethoff",
+        "given": "Matt"
+      },
+      {
+        "family": "Willner",
+        "given": "Dave"
+      },
+      {
+        "family": "Winter",
+        "given": "Clemens"
+      },
+      {
+        "family": "Wolrich",
+        "given": "Samuel"
+      },
+      {
+        "family": "Wong",
+        "given": "Hannah"
+      },
+      {
+        "family": "Workman",
+        "given": "Lauren"
+      },
+      {
+        "family": "Wu",
+        "given": "Sherwin"
+      },
+      {
+        "family": "Wu",
+        "given": "Jeff"
+      },
+      {
+        "family": "Wu",
+        "given": "Michael"
+      },
+      {
+        "family": "Xiao",
+        "given": "Kai"
+      },
+      {
+        "family": "Xu",
+        "given": "Tao"
+      },
+      {
+        "family": "Yoo",
+        "given": "Sarah"
+      },
+      {
+        "family": "Yu",
+        "given": "Kevin"
+      },
+      {
+        "family": "Yuan",
+        "given": "Qiming"
+      },
+      {
+        "family": "Zaremba",
+        "given": "Wojciech"
+      },
+      {
+        "family": "Zellers",
+        "given": "Rowan"
+      },
+      {
+        "family": "Zhang",
+        "given": "Chong"
+      },
+      {
+        "family": "Zhang",
+        "given": "Marvin"
+      },
+      {
+        "family": "Zhao",
+        "given": "Shengjia"
+      },
+      {
+        "family": "Zheng",
+        "given": "Tianhao"
+      },
+      {
+        "family": "Zhuang",
+        "given": "Juntang"
+      },
+      {
+        "family": "Zhuk",
+        "given": "William"
+      },
+      {
+        "family": "Zoph",
+        "given": "Barret"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "abstract": "We report the development of GPT-4, a large-scale, multimodal model which can accept image and text inputs and produce text outputs. While less capable than humans in many real-world scenarios, GPT-4 exhibits human-level performance on various professional and academic benchmarks, including passing a simulated bar exam with a score around the top 10% of test takers. GPT-4 is a Transformer-based model pre-trained to predict the next token in a document. The post-training alignment process results in improved performance on measures of factuality and adherence to desired behavior. A core component of this project was developing infrastructure and optimization methods that behave predictably across a wide range of scales. This allowed us to accurately predict some aspects of GPT-4's performance based on models trained with no more than 1/1,000th the compute of GPT-4.",
+    "DOI": "10.48550/arxiv.2303.08774",
+    "publisher": "arXiv",
+    "title": "GPT-4 Technical Report",
+    "URL": "https://doi.org/grx4cb",
+    "version": "6",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.2303.08774"
+  },
+  {
+    "type": "article",
+    "id": "XWylheIC",
+    "categories": [
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "FOS: Computer and information sciences",
+      "FOS: Computer and information sciences"
+    ],
+    "author": [
+      {
+        "family": "Rafailov",
+        "given": "Rafael"
+      },
+      {
+        "family": "Sharma",
+        "given": "Archit"
+      },
+      {
+        "family": "Mitchell",
+        "given": "Eric"
+      },
+      {
+        "family": "Ermon",
+        "given": "Stefano"
+      },
+      {
+        "family": "Manning",
+        "given": "Christopher D."
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "abstract": "While large-scale unsupervised language models (LMs) learn broad world knowledge and some reasoning skills, achieving precise control of their behavior is difficult due to the completely unsupervised nature of their training. Existing methods for gaining such steerability collect human labels of the relative quality of model generations and fine-tune the unsupervised LM to align with these preferences, often with reinforcement learning from human feedback (RLHF). However, RLHF is a complex and often unstable procedure, first fitting a reward model that reflects the human preferences, and then fine-tuning the large unsupervised LM using reinforcement learning to maximize this estimated reward without drifting too far from the original model. In this paper we introduce a new parameterization of the reward model in RLHF that enables extraction of the corresponding optimal policy in closed form, allowing us to solve the standard RLHF problem with only a simple classification loss. The resulting algorithm, which we call Direct Preference Optimization (DPO), is stable, performant, and computationally lightweight, eliminating the need for sampling from the LM during fine-tuning or performing significant hyperparameter tuning. Our experiments show that DPO can fine-tune LMs to align with human preferences as well as or better than existing methods. Notably, fine-tuning with DPO exceeds PPO-based RLHF in ability to control sentiment of generations, and matches or improves response quality in summarization and single-turn dialogue while being substantially simpler to implement and train.",
+    "DOI": "10.48550/arxiv.2305.18290",
+    "publisher": "arXiv",
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "URL": "https://doi.org/hbwzbb",
+    "version": "3",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.48550/arxiv.2305.18290"
+  }
+]
